@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import BlogPost from '../../../components/BlogPost.astro'
+import { posts } from '../../../scripts/posts'
+import { getLangFromUrl } from '../../../i18n/utils'
+import { siteTitle } from '../../../constants'
+
+export async function getStaticPaths() {
+	const tags = [...new Set(posts.reduce((tags, post) => {
+		tags = [
+			...tags,
+			...post.data.tags
+		]
+		return tags
+	}, []))]
+
+	return tags.map(tag => ({
+		params: { tag },
+		props: { filteredPosts: posts.filter(post => post.data.tags.includes(tag)) }
+	}))
+}
+
+const lang = getLangFromUrl(Astro.url)
+const subtitle = 'etiqueta'
+const { tag } = Astro.params
+const { filteredPosts } = Astro.props
+const translatedPosts = filteredPosts.filter(post => post.slug.includes(`${lang}/`))
+const pageTitle = siteTitle + ' - ' + subtitle + ' ' + tag
+---
+<BaseLayout pageTitle={pageTitle}>
+  <h1>Publicaciones relacionadas</h1>
+  <p>Publicaciones etiquetadas con <em>{tag}</em>.</p>
+  <ul>
+    {translatedPosts.map(post => <BlogPost date={post.data.pubDate} title={post.data.title} url={`/${lang}/blog/${post.slug.slice(3)}`} />)}
+  </ul>
+</BaseLayout>
+
+<style is:global>
+  main {
+    align-self: center;
+    max-width: 1248px;
+		width: calc(100% - 2rem);
+  }
+</style>
+
+<style>
+  ul {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		list-style-type: none;
+		margin-top: 2rem;
+		padding: 0;
+	}
+
+	@media screen and (min-width: 636px) {
+		ul {
+			grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+		}
+	}
+
+	@media screen and (min-width: 1248px) {
+		ul {
+			grid-template-columns: calc(25% - 1rem) calc(25% - 1rem) calc(25% - 1rem) calc(25% - 1rem);
+		}
+	}
+</style>

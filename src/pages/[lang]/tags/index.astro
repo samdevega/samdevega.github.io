@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import Tag from '../../../components/Tag.astro'
+import { translatePosts } from '../../../scripts/posts'
+import { getLangFromUrl, useTranslations } from '../../../i18n/utils'
+import { siteTitle } from '../../../constants'
+
+export const getStaticPaths = async () => {
+  return [
+    {
+      params: { lang: 'en' },
+      props: { posts: await translatePosts('en') },
+    },
+    {
+      params: { lang: 'es' },
+      props: { posts: await translatePosts('es') },
+    }
+  ]
+}
+
+const lang = getLangFromUrl(Astro.url)
+const { posts } = Astro.props
+const t = useTranslations(lang)
+const tags = [...new Set(posts.map(post => post.data.tags).flat().sort())]
+const subtitle = t('nav.tags')
+const pageTitle = siteTitle + ' - ' + subtitle
+---
+<BaseLayout pageTitle={pageTitle}>
+  <h1>{subtitle}</h1>
+  <p>{t('tags.description')}</p>
+  <ul>
+    {tags.map(tag => <Tag tag={tag} />)}
+  </ul>
+</BaseLayout>
+
+<style is:global>
+  main {
+    align-self: center;
+    max-width: 1248px;
+		width: calc(100% - 2rem);
+  }
+</style>
+
+<style>
+  ul {
+    display: flex;
+    gap: 0.5rem;
+    list-style-type: none;
+    margin-top: 1.5rem;
+    padding: 0;
+  }
+</style>

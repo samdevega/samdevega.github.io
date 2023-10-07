@@ -1,0 +1,44 @@
+export const languages = {
+  en: 'English',
+  es: 'Español',
+}
+export const defaultLang = 'en'
+export const showDefaultLang = true
+export const ui = {
+  en: {
+    '404_description': 'Page not found',
+    '404_image': 'Wild MISSINGNO. appeared!',
+    'continue_reading': 'Continue reading',
+    'footer.findme': 'Find me on',
+    'nav.about': 'About',
+    'nav.blog': 'Blog',
+    'nav.home': 'Home',
+    'nav.tags': 'Tags',
+    'next_page': 'Next page',
+    'next_post': 'Next post',
+    'previous_page': 'Previous page',
+    'previous_post': 'Previous post',
+    'software_developer': 'Software Developer',
+    'spain': 'Spain',
+    'tags.description': 'Find posts by tag.',
+    'written_by': 'Written by',
+  },
+  es: {
+    '404_description': 'Página no encontrada',
+    '404_image': 'Un MISSINGNO. salvaje apareció!',
+    'continue_reading': 'Continuar leyendo',
+    'footer.findme': 'Encuéntrame en',
+    'nav.about': 'Acerca',
+    'nav.blog': 'Blog',
+    'nav.home': 'Inicio',
+    'nav.tags': 'Etiquetas',
+    'next_page': 'Siguiente página',
+    'next_post': 'Siguiente publicación',
+    'previous_page': 'Anterior página',
+    'previous_post': 'Anterior publicación',
+    'software_developer': 'Desarrollador de software',
+    'spain': 'España',
+    'tags.description': 'Encontrar publicaciones por etiqueta.',
+    'written_by': 'Escrito por',
+  }
+} as const

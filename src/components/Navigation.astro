@@ -1,0 +1,123 @@
+---
+import Icon from './Icon.astro'
+import LangButton from './LangButton.astro'
+import ThemeButton from './ThemeButton.astro'
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const en = useTranslations('en')
+const translatePath = useTranslatedPath(lang)
+
+const size = '1rem'
+---
+<nav>
+  <ul>
+    <li>
+      <a href={translatePath('/')} data-name={en('nav.home')}>{t('nav.home')}</a>
+    </li>
+    <li>
+      <a href={translatePath('/blog/1')} data-name={en('nav.blog')}>{t('nav.blog')}</a>
+    </li>
+    <li>
+      <a href={translatePath('/tags')} data-name={en('nav.tags')}>{t('nav.tags')}</a>
+    </li>
+    <li>
+      <a href={translatePath('/about')} data-name={en('nav.about')}>{t('nav.about')}</a>
+    </li>
+    <li>
+      <LangButton />
+    </li>
+    <li>
+      <ThemeButton size={size} />
+    </li>
+    <li>
+      <a href={`/${lang}/rss.xml`}>
+        <Icon name='rss' size={size} />
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<style>
+  nav {
+    display: none;
+  }
+  nav.expanded {
+    display: unset;
+    left: 0;
+    padding: 1rem;
+    position: absolute;
+    top: 4rem;
+    z-index: 3;
+  }
+  ul {
+    height: calc(100vh - 6rem);
+    list-style: none;
+    margin: 0 0 0 -1rem;
+    padding: 1rem;
+    width: calc(100vw - 2rem);
+  }
+  li {
+    margin-bottom: 1rem;
+  }
+  a {
+    color: #909090;
+    display: inline-block;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    text-decoration: none;
+  }
+  li:last-child a,
+  a.active {
+    color: inherit;
+  }
+  li:last-child a:hover,
+  a:not(.active):hover {
+    color: #b77a00;
+  }
+  @media screen and (min-width: 636px) {
+    nav, nav.expanded {
+      display: flex;
+      height: unset;
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+      top: unset;
+      width: 100%;
+    }
+    ul {
+      align-items: center;
+      background-color: unset;
+      display: flex;
+      gap: 1.5rem;
+      height: unset;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    li {
+      margin-bottom: 0;
+    }
+    li:nth-last-child(3) {
+      margin-left: auto;
+    }
+    a {
+      line-height: 2rem;
+    }
+  }
+</style>
+
+<script>
+  var section = window.location.pathname.replace(/(en|es)\//, '').split('/')[1]
+  var navItems = [...document.querySelectorAll('nav li a')]
+  var activeNavItem = undefined
+  if (section === '') {
+    activeNavItem = navItems[0]
+  } else {
+    activeNavItem = navItems.slice(1).find(navItem => navItem.getAttribute('data-name').toLowerCase() === section)
+  }
+  if (activeNavItem) {
+    activeNavItem.classList.add('active')
+  }
+</script>

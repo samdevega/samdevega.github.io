@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+import { author, siteTitle } from '../../constants'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const subtitle = t('nav.about') + ' me'
+const pageTitle = siteTitle + ' - ' + subtitle
+const identity = {
+  name: author.name,
+  country: 'Spain',
+  hobbies: ['reading science fiction novels', 'hiking', 'swimming', 'playing board games'],
+  occupation: 'Software Developer'
+}
+const skills = [
+  "HTML", "CSS", "JavaScript", "TypeScript", "React", "Vue", "PHP", "Laravel", "Tailwind", "Git"
+]
+---
+<BaseLayout pageTitle={pageTitle}>
+  <h1>{subtitle}</h1>
+  <p>I am {identity.name}. I live in {identity.country} and I work as a {identity.occupation}.</p>
+  <p>Some of my hobbies are {new Intl.ListFormat('en-GB', { style: 'long', type: 'conjunction' }).format(identity.hobbies)}.</p>
+  {!!skills.length &&
+    <p>My technical skills include:</p>
+    <ul>{skills.map(skill => <li>{skill}</li>)}</ul>
+  }
+</BaseLayout>
+
+<style is:global>
+  main {
+    align-self: center;
+    max-width: 1248px;
+		width: calc(100% - 2rem);
+  }
+</style>

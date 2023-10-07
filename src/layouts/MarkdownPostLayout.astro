@@ -1,0 +1,126 @@
+---
+import BaseLayout from './BaseLayout.astro'
+import Tag from '../components/Tag.astro'
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import { author } from '../constants'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const { frontmatter } = Astro.props
+---
+<head>
+  <meta charset="utf-8" />
+</head>
+<BaseLayout>
+  <article>
+    <h1>{frontmatter.title}</h1>
+    <hr>
+    <slot />
+    <section>
+      <div>
+      {!!frontmatter.tags.length &&
+        <strong>{t('nav.tags')}</strong>
+        <ul>
+          {frontmatter.tags.sort().map(tag => <Tag tag={tag} />)}
+        </ul>
+      }
+      </div>
+      <div>
+        {frontmatter.pubDate.toISOString().split('T')[0]}
+        <br>
+        <small>{t('written_by')}&nbsp;{author.fullName}.</small>
+      </div>
+    </section>
+    {(frontmatter.previous || frontmatter.next) &&
+    <div>
+      <strong>{t('continue_reading')}</strong>
+      <ul>
+        {frontmatter.previous &&
+        <li>
+          <a href={frontmatter.previous}>&lsaquo; {t('previous_post')}</a>
+        </li>
+        }
+        {frontmatter.next && 
+        <li>
+          <a href={frontmatter.next}>{t('next_post')} &rsaquo;</a>
+        </li>
+        }
+      </ul>
+    </div>
+    }
+  </article>
+</BaseLayout>
+
+<style is:global>
+  main {
+    align-self: center;
+    max-width: 1248px;
+		width: calc(100% - 2rem);
+  }
+</style>
+
+<style is:global>
+  article h1 {
+    font-family: 'PlayfairDisplayItalic';
+  }
+
+  article h2,
+  article h3,
+  article h4,
+  article h5,
+  article h6 {
+    margin: 2rem 0 1rem 0;
+  }
+
+  article h1 + hr {
+    background-color: var(--highlight-color);
+    border: 0;
+    height: 0.3rem;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    width: 150px;
+  }
+
+  section {
+    margin: 3rem 0;
+  }
+
+  section div {
+    flex-grow: 1;
+  }
+
+  section div ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  section div + div {
+    align-self: center;
+    text-align: right;
+  }
+
+  section + div {
+    margin-bottom: 2rem;
+  }
+
+  section + div ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  section + div a {
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 636px) {
+    section {
+      align-content: stretch;
+      display: flex;
+    }
+  }
+</style>

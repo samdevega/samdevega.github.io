@@ -1,0 +1,46 @@
+---
+import Social from './Social.astro'
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import { site, socials } from '../constants'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+<footer>
+  <div>
+    <span>{t('footer.findme')}</span>
+    <ul>
+      {socials.map(social => <li><Social platform={social.platform} url={social.url} /></li>)}
+    </ul>
+  </div>
+  <span>{site}</span>
+</footer>
+
+<style>
+  footer {
+    align-items: center;
+    box-shadow: 0 0 1px #aaaaaa;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+  div {
+    align-content: center;
+    display: flex;
+    gap: 0.5rem;
+  }
+  span {
+    line-height: 2rem;
+  }
+  ul {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    height: 2rem;
+  }
+</style>

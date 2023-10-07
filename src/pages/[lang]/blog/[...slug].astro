@@ -1,0 +1,20 @@
+---
+import MarkdownPostLayout from '../../../layouts/MarkdownPostLayout.astro'
+import { posts } from '../../../scripts/posts'
+
+export async function getStaticPaths() {
+  const paths = posts.map(post => {
+    const [lang, ...slug] = post.slug.split('/')
+    
+    return { params: { lang, slug: slug.join('/') || undefined }, props: post }
+  })
+
+  return paths
+}
+
+const post = Astro.props
+const { Content } = await post.render()
+---
+<MarkdownPostLayout frontmatter={post.data}>
+  <Content />
+</MarkdownPostLayout>

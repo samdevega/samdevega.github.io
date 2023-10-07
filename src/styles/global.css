@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'BookerlyLight';
+  src: url(/fonts/BookerlyLight.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url(/fonts/PlayfairDisplay.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PlayfairDisplayItalic';
+  src: url(/fonts/PlayfairDisplayItalic.ttf) format('truetype');
+}
+
+:root {
+  --light-color: #fefefe;
+  --dark-color: #101010;
+  --highlight-color: #b77a00;
+}
+
+html, body {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  font-family: 'BookerlyLight', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+nav.expanded {
+  background-color: var(--light-color);
+}
+
+html.dark body,
+html.dark nav.expanded {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body.locked {
+  overflow: hidden;
+}
+
+main {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  font-family: 'PlayfairDisplay';
+  margin: 0.5rem 0 1rem 0;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+main h2 {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+}
+
+main h3 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+main h4 {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
+main h5 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+main h5 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+main h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+main ul {
+  padding: 0 0 0 1rem;
+}
+
+main li {
+  margin-bottom: 0.5rem;
+}
+
+main p {
+  line-height: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+
+main a {
+  color: var(--highlight-color);
+  text-underline-offset: 0.25rem;
+}
