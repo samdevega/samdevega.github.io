@@ -1,5 +1,5 @@
 ---
-import Icon from './Icon.astro'
+import RssIcon from './RssIcon.astro'
 import LangButton from './LangButton.astro'
 import ThemeButton from './ThemeButton.astro'
 import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils'
@@ -33,7 +33,7 @@ const size = '1rem'
     </li>
     <li>
       <a href={`/${lang}/rss.xml`}>
-        <Icon name='rss' size={size} />
+        <RssIcon size={size} />
       </a>
     </li>
   </ul>

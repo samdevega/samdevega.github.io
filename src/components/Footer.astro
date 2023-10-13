@@ -1,22 +1,33 @@
 ---
-import Social from './Social.astro'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
-import { site, socials } from '../constants'
+import { site } from '../constants'
+import GhIcon from './GhIcon.astro'
+import LinkedinIcon from './LinkedinIcon.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+const size = '2rem'
 ---
 <footer>
   <div>
     <span>{t('footer.findme')}</span>
     <ul>
-      {socials.map(social => <li><Social platform={social.platform} url={social.url} /></li>)}
+      <li>
+        <a href='https://www.github.com/samdevega' title='GitHub'>
+          <GhIcon size={size} />
+        </a>
+      </li>
+      <li>
+        <a href='https://www.linkedin.com/in/samdevega' title='LinkedIn'>
+          <LinkedinIcon size={size} />
+        </a>
+      </li>
     </ul>
   </div>
   <span>{site}</span>
 </footer>
 
-<style>
+<style define:vars={{size}}>
   footer {
     align-items: center;
     box-shadow: 0 0 1px #aaaaaa;
@@ -42,5 +53,14 @@ const t = useTranslations(lang)
   }
   li {
     height: 2rem;
+  }
+  a {
+    color: inherit;
+    display: inline-block;
+    height: var(--size);
+    width: var(--size);
+  }
+  a:hover {
+    color: #b77a00;
   }
 </style>

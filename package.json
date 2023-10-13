@@ -7,10 +7,14 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@astrojs/rss": "^3.0.0",
     "astro": "^3.2.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }

@@ -1,11 +1,12 @@
 ---
-import Icon from './Icon.astro'
+import MoonIcon from './MoonIcon.astro'
+import SunIcon from './SunIcon.astro'
 
 const { size } = Astro.props
 ---
 <button id='themeToggler'>
-  <Icon classes='moon' name='moon' size={size} />
-  <Icon classes='sun' name='sun' size={size} />
+  <MoonIcon classes='moon' size={size} />
+  <SunIcon classes='sun' size={size} />
 </button>
 
 <style>
@@ -57,7 +58,6 @@ const { size } = Astro.props
   window.localStorage.setItem('theme', theme)
 
   const handleToggleClick = () => {
-    console.log('CUCU')
     const element = document.documentElement
     element.classList.toggle('dark')
 
