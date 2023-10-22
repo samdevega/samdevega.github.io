@@ -37,12 +37,12 @@ const { frontmatter } = Astro.props
       <ul>
         {frontmatter.previous &&
         <li>
-          <a href={frontmatter.previous}>&lsaquo; {t('previous_post')}</a>
+          <a href={`/${lang}/blog/${frontmatter.previous}`}>&lsaquo; {t('previous_post')}</a>
         </li>
         }
         {frontmatter.next && 
         <li>
-          <a href={frontmatter.next}>{t('next_post')} &rsaquo;</a>
+          <a href={`/${lang}/blog/${frontmatter.next}`}>{t('next_post')} &rsaquo;</a>
         </li>
         }
       </ul>
