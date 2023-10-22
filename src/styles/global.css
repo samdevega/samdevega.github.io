@@ -111,3 +111,7 @@ main a {
   color: var(--highlight-color);
   text-underline-offset: 0.25rem;
 }
+
+pre {
+  padding: 0.5rem;
+}
