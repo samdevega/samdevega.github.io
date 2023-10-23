@@ -97,6 +97,7 @@ main h6 {
   line-height: 1.5rem;
 }
 
+main ol,
 main ul {
   padding: 0 0 0 1rem;
 }
