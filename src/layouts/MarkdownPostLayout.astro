@@ -18,19 +18,19 @@ const { frontmatter } = Astro.props
     <slot />
     <section>
       <div>
-      {!!frontmatter.tags.length &&
-        <strong>{t('nav.tags')}</strong>
-        <ul>
-          {frontmatter.tags.sort().map(tag => <Tag tag={tag} />)}
-        </ul>
-      }
-      </div>
-      <div>
         {frontmatter.pubDate.toISOString().split('T')[0]}
         <br>
         <small>{t('written_by')}&nbsp;{author.fullName}.</small>
       </div>
     </section>
+    <div>
+    {!!frontmatter.tags.length &&
+      <strong>{t('nav.tags')}</strong>
+      <ul>
+        {frontmatter.tags.sort().map(tag => <Tag tag={tag} />)}
+      </ul>
+    }
+    </div>
     {(frontmatter.previous || frontmatter.next) &&
     <div>
       <strong>{t('continue_reading')}</strong>
@@ -60,6 +60,10 @@ const { frontmatter } = Astro.props
 </style>
 
 <style is:global>
+  article {
+    margin-bottom: 2rem;
+  }
+
   article h1 {
     font-family: 'PlayfairDisplayItalic';
   }
@@ -86,41 +90,22 @@ const { frontmatter } = Astro.props
   }
 
   section div {
-    flex-grow: 1;
-  }
-
-  section div ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    list-style-type: none;
-    padding: 0;
-  }
-
-  section div + div {
-    align-self: center;
     text-align: right;
   }
 
   section + div {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
-  section + div ul {
+  div ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     list-style-type: none;
     padding: 0;
   }
-
-  section + div a {
+  
+  div ul a {
     text-decoration: none;
-  }
-
-  @media screen and (min-width: 636px) {
-    section {
-      align-content: stretch;
-      display: flex;
-    }
   }
 </style>
