@@ -1,14 +1,17 @@
 @font-face {
+  font-display: swap;
   font-family: 'BookerlyLight';
   src: url(/fonts/BookerlyLight.ttf) format('truetype');
 }
 
 @font-face {
+  font-display: swap;
   font-family: 'PlayfairDisplay';
   src: url(/fonts/PlayfairDisplay.ttf) format('truetype');
 }
 
 @font-face {
+  font-display: swap;
   font-family: 'PlayfairDisplayItalic';
   src: url(/fonts/PlayfairDisplayItalic.ttf) format('truetype');
 }
