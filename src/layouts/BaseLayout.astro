@@ -8,7 +8,11 @@ const { pageTitle } = Astro.props
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" href="/fonts/BookerlyLight.ttf" as="font" type="font/ttf">
+    <link rel="preload" href="/fonts/PlayfairDisplay.ttf" as="font" type="font/ttf">
+    <link rel="preload" href="/fonts/PlayfairDisplayItalic.ttf" as="font" type="font/ttf">
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Personal blog about software development topics.">
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>

@@ -32,7 +32,7 @@ const size = '1rem'
       <ThemeButton size={size} />
     </li>
     <li>
-      <a href={`/${lang}/rss.xml`}>
+      <a href={`/${lang}/rss.xml`} aria-label="RSS feed">
         <RssIcon size={size} />
       </a>
     </li>
@@ -61,7 +61,7 @@ const size = '1rem'
     padding: 0;
   }
   a {
-    color: #909090;
+    color: inherit;
     display: inline-block;
     font-size: 1.25rem;
     line-height: 2rem;
@@ -73,6 +73,9 @@ const size = '1rem'
   li:last-child a,
   a.active {
     color: inherit;
+    text-decoration: underline;
+    text-decoration-color: #b77a00;
+    text-underline-offset: 0.5rem;
   }
   li:last-child a:hover,
   a:not(.active):hover {
