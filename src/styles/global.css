@@ -102,6 +102,13 @@ main ul {
   padding: 0 0 0 1rem;
 }
 
+main ol ol,
+main ol ul,
+main ul ol,
+main ul ul {
+  margin-top: 0.6rem;
+}
+
 main li {
   margin-bottom: 0.5rem;
 }
