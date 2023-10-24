@@ -2,16 +2,15 @@
 import BaseLayout from './BaseLayout.astro'
 import Tag from '../components/Tag.astro'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
-import { author } from '../constants'
+import { author, siteTitle } from '../constants'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 const { frontmatter } = Astro.props
+const subtitle = frontmatter.title
+const pageTitle = siteTitle +  ' - ' + subtitle
 ---
-<head>
-  <meta charset="utf-8" />
-</head>
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
   <article>
     <h1>{frontmatter.title}</h1>
     <hr>
