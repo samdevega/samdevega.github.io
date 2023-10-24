@@ -1,5 +1,5 @@
 ---
-title: "Bad Smells: Responsabilidad"
+title: "Malos olores: Responsabilidad"
 pubDate: 2019-03-20T15:02:42Z
 tags: ['bad-smells']
 ---
