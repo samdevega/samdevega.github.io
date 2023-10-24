@@ -1,7 +1,7 @@
 ---
 title: "Object-oriented: Procedural polymorphism"
 pubDate: 2021-03-12T09:00:44Z
-tags: ['solid']
+tags: ['object-oriented']
 ---
 ## About polymorphism in object-oriented design
 

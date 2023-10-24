@@ -1,7 +1,7 @@
 ---
 title: "Orientado a objetos: Polimorfismo procedural"
 pubDate: 2021-03-12T09:00:44Z
-tags: ['solid']
+tags: ['object-oriented']
 ---
 ## Sobre el polimorfismo en el diseño orientado a objetos
 
