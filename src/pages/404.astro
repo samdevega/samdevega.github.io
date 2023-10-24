@@ -1,18 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import { getLangFromUrl, useTranslations } from '../i18n/utils'
 import { siteTitle } from '../constants'
 
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
 const subtitle = '404'
 const pageTitle = siteTitle + ' - ' + subtitle
 ---
 <BaseLayout pageTitle={pageTitle}>
 	<div>
 		<h1>404</h1>
-		<h2>{t('404_description')}</h2>
-    <img alt="MissingNo" src="/images/missingno.png" title={t('404_image')}>
+		<h2>Page not found</h2>
+    <img alt="MissingNo" src="/images/missingno.png" title="Wild MISSINGNO. appeared!">
 	</div>
 </BaseLayout>
 

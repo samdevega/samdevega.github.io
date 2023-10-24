@@ -6,8 +6,6 @@ export const defaultLang = 'en'
 export const showDefaultLang = true
 export const ui = {
   en: {
-    '404_description': 'Page not found',
-    '404_image': 'Wild MISSINGNO. appeared!',
     'continue_reading': 'Continue reading',
     'footer.findme': 'Find me on',
     'nav.about': 'About',
@@ -24,8 +22,6 @@ export const ui = {
     'written_by': 'Written by',
   },
   es: {
-    '404_description': 'Página no encontrada',
-    '404_image': 'Un MISSINGNO. salvaje apareció!',
     'continue_reading': 'Continuar leyendo',
     'footer.findme': 'Encuéntrame en',
     'nav.about': 'Acerca',
