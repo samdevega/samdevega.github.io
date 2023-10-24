@@ -1,5 +1,5 @@
 ---
-title: "Object Oriented: Depend on behavior, not data"
+title: "Object-oriented: Depend on behavior, not data"
 pubDate: 2021-10-10T13:45:42+01:00
 tags: ['object-oriented']
 ---
