@@ -98,7 +98,7 @@ In this way, possible errors in interpretation or use are avoided. Now, if you w
 With this we gain:
 * Eliminate unnecessary complexity by reducing state.
 * Eliminate duplicity, comply with <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank">DRY</a>.
-* Remove the ability to create <a href="https://www.samdevega.com/en/blog/design-principles-cohesion-coupling-and-encapsulation#coupling" target="_blank">coupling</a> , ensure <a href="https://www.samdevega.com/en/blog/design-principles-cohesion-coupling-and-encapsulation#cohesion" target="_blank">cohesion</a>.
+* Remove the ability to create <a href="/en/blog/cohesion-coupling-and-encapsulation#coupling" target="_blank">coupling</a> , ensure <a href="/en/blog/cohesion-coupling-and-encapsulation#cohesion" target="_blank">cohesion</a>.
 
 ## Conclusion
 
