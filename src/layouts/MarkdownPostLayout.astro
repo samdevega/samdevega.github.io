@@ -1,6 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro'
-import Tag from '../components/Tag.astro'
+import TagList from '../components/TagList.astro'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 import { author, siteTitle } from '../constants'
 
@@ -25,9 +25,7 @@ const pageTitle = siteTitle +  ' - ' + subtitle
     <div>
     {!!frontmatter.tags.length &&
       <strong>{t('nav.tags')}</strong>
-      <ul>
-        {frontmatter.tags.sort().map(tag => <Tag tag={tag} />)}
-      </ul>
+      <TagList tags={frontmatter.tags.sort()} />
     }
     </div>
     {(frontmatter.previous || frontmatter.next) &&

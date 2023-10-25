@@ -5,7 +5,7 @@ const lang = getLangFromUrl(Astro.url)
 const translatePath = useTranslatedPath(lang)
 const { tag } = Astro.props
 ---
-<li><a class='tag' href={translatePath(`/tags/${tag}`)}>{tag}</a></li>
+<a class='tag' href={translatePath(`/tags/${tag}`)}>{tag}</a>
 
 <style>
   .tag {

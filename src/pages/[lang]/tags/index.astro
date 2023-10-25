@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro'
-import Tag from '../../../components/Tag.astro'
+import TagList from '../../../components/TagList.astro'
 import { translatePosts } from '../../../scripts/posts'
 import { getLangFromUrl, useTranslations } from '../../../i18n/utils'
 import { siteTitle } from '../../../constants'
@@ -28,9 +28,7 @@ const pageTitle = siteTitle + ' - ' + subtitle
 <BaseLayout pageTitle={pageTitle}>
   <h1>{subtitle}</h1>
   <p>{t('tags.description')}</p>
-  <ul>
-    {tags.map(tag => <Tag tag={tag} />)}
-  </ul>
+  <TagList tags={tags} />
 </BaseLayout>
 
 <style is:global>
@@ -38,15 +36,5 @@ const pageTitle = siteTitle + ' - ' + subtitle
     align-self: center;
     max-width: 1248px;
 		width: calc(100% - 2rem);
-  }
-</style>
-
-<style>
-  ul {
-    display: flex;
-    gap: 0.5rem;
-    list-style-type: none;
-    margin-top: 1.5rem;
-    padding: 0;
   }
 </style>
