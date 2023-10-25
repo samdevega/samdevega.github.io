@@ -74,13 +74,13 @@ const { page } = Astro.props;
 
 	@media screen and (min-width: 636px) {
 		ul {
-			grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 
 	@media screen and (min-width: 1248px) {
 		ul {
-			grid-template-columns: calc(25% - 1rem) calc(25% - 1rem) calc(25% - 1rem) calc(25% - 1rem);
+			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 </style>
