@@ -3,8 +3,6 @@ title: "Malos olores: Responsabilidad"
 pubDate: 2019-03-20T15:02:42Z
 tags: ['bad-smells']
 ---
-## Introducción
-
 El equilibrio en la responsabilidad entre objetos es difícil de conseguir. Una de las virtudes de la refactorización es que nos permite experimentar con diferentes ideas de una forma segura y nos permite cambiar de idea.
 
 Hay herramientas que nos ayudan a decidir como trabajan los objetos entre sí, como los *patrones de diseño* o las *cartas CRC*.

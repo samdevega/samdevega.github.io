@@ -3,11 +3,9 @@ title: "Malos olores: Lógica condicional"
 pubDate: 2019-03-19T21:46:06Z
 tags: ['bad-smells']
 ---
-## Introducción
-
-* Es difícil de razonar ya que tenemos que considerar múltiples caminos a través del código.
-* Es tentador añadir casos de uso especiales en lugar de desarrollar un caso de uso general.
-* A veces es usada como un mal sustituto de mecanismos orientados a objetos.
+Es difícil de razonar ya que tenemos que considerar múltiples caminos a través del código.
+Es tentador añadir casos de uso especiales en lugar de desarrollar un caso de uso general.
+A veces es usada como un mal sustituto de mecanismos orientados a objetos.
 
 Los malos olores derivados de un mal uso de la lógica condicional son:
 

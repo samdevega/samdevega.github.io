@@ -3,8 +3,6 @@ title: "Bad Smells: Responsibility"
 pubDate: 2019-03-20T15:02:42Z
 tags: ['bad-smells']
 ---
-## Introduction
-
 Balancing responsibility between objects is difficult to achieve. One of the virtues of refactoring is that it allows us to experiment with different ideas in a safe way and allows us to change our minds.
 
 There are tools that help us decide how objects work with each other, such as *design patterns* or *CRC charts*.

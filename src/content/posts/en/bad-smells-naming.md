@@ -3,8 +3,6 @@ title: "Bad Smells: Naming"
 pubDate: 2019-03-19T21:02:05Z
 tags: ['bad-smells']
 ---
-## Introduction
-
 Some tools to choose names can be:
 
 * Project dictionaries.

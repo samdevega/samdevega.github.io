@@ -3,11 +3,9 @@ title: "Bad Smells: Conditional logic"
 pubDate: 2019-03-19T21:46:06Z
 tags: ['bad-smells']
 ---
-## Introduction
-
-* It is difficult to reason since we have to consider multiple paths through the code.
-* It is tempting to add special use cases instead of developing a general use case.
-* Sometimes used as a poor substitute for object-oriented mechanisms.
+It is difficult to reason since we have to consider multiple paths through the code.
+It is tempting to add special use cases instead of developing a general use case.
+Sometimes used as a poor substitute for object-oriented mechanisms.
 
 The bad smells derived from misuse of conditional logic are:
 
