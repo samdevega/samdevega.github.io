@@ -1,12 +1,11 @@
 ---
-import MoonIcon from './MoonIcon.astro'
-import SunIcon from './SunIcon.astro'
+import Icon from './Icon.astro'
 
 const { size } = Astro.props
 ---
-<button id='themeToggler' aria-label="Toggle dark/light mode">
-  <MoonIcon classes='moon' size={size} />
-  <SunIcon classes='sun' size={size} />
+<button id='themeToggler' aria-label='Toggle dark/light mode'>
+  <Icon classes='moon' name='moon' size={size} />
+  <Icon classes='sun' name='sun' size={size} />
 </button>
 
 <style>

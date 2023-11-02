@@ -1,0 +1,41 @@
+---
+import Icon from './Icon.astro'
+
+const { size } = Astro.props
+---
+<button aria-label='Menu'>
+  <Icon classes='close' name='close' size={size} />
+  <Icon classes='menu' name='menu' size={size}/>
+</button>
+
+<style>
+  button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    height: 2rem;
+    padding: 0;
+    width: 2rem;
+  }
+  button:hover {
+    color: #bb6633;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 636px) {
+    button {
+      display: none;
+    }
+  }
+</style>
+
+<style is:global>
+  svg.close {
+    display: none;
+  }
+  body.locked svg.close {
+    display: block;
+  }
+  body.locked svg.menu {
+    display: none;
+  }
+</style>

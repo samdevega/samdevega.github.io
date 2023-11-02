@@ -1,8 +1,7 @@
 ---
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 import { site } from '../constants'
-import GhIcon from './GhIcon.astro'
-import LinkedinIcon from './LinkedinIcon.astro'
+import Icon from './Icon.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
@@ -14,12 +13,12 @@ const size = '2rem'
     <ul>
       <li>
         <a href='https://www.github.com/samdevega' title='GitHub'>
-          <GhIcon size={size} />
+          <Icon size={size} name='github' />
         </a>
       </li>
       <li>
         <a href='https://www.linkedin.com/in/samdevega' title='LinkedIn'>
-          <LinkedinIcon size={size} />
+          <Icon size={size} name='linkedin' />
         </a>
       </li>
     </ul>
