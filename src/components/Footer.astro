@@ -1,6 +1,6 @@
 ---
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
-import { site } from '../constants'
+import { site, socials } from '../constants'
 import Icon from './Icon.astro'
 
 const lang = getLangFromUrl(Astro.url)
@@ -11,16 +11,13 @@ const size = '2rem'
   <div>
     <span>{t('footer.findme')}</span>
     <ul>
-      <li>
-        <a href='https://www.github.com/samdevega' title='GitHub'>
-          <Icon size={size} name='github' />
-        </a>
-      </li>
-      <li>
-        <a href='https://www.linkedin.com/in/samdevega' title='LinkedIn'>
-          <Icon size={size} name='linkedin' />
-        </a>
-      </li>
+      { socials.map(social => (
+        <li>
+          <a href={social.url} title={social.platform}>
+            <Icon size={size} name={social.platform.toLowerCase()} />
+          </a>
+        </li>
+      )) }
     </ul>
   </div>
   <span>{site}</span>

@@ -11,6 +11,6 @@ export const socials = [
   },
   {
     platform: 'LinkedIn',
-    url: `https://www.linkedin.com/in/samdevega`
+    url: `https://www.linkedin.com/in/sam-de-vega`
   }
 ]
