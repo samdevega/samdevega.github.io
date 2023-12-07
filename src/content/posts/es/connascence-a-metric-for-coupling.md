@@ -16,7 +16,7 @@ Para medir la forma de connascence existen de tres factores:
 <figcaption>Fuerza (de menor a mayor), grado (de bajo a alto) y localidad (de cerca a lejos).</figcaption>
 </figure>
 
-## Tipos de Connascence
+## Tipos de connascence
 
 Los tipos de connascence se dividen en dinámicos y estáticos, yendo en gravedad de más fuertes a más débiles.
 
