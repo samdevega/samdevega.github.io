@@ -7,8 +7,8 @@ This metric for software quality was invented by Meilir Page-Jones to allow eval
 
 To measure the form of connascence there are three factors:
 
-* **Force**: When a change in one actor implies a change in another. It will be more serious the more complex and expensive the change is.
-* **Grade**: The occurrence with which the coupling occurs. It will be more serious the more times it is repeated throughout the code.
+* **Strength**: When a change in one actor implies a change in another. It will be more serious the more complex and expensive the change is.
+* **Degree**: The occurrence with which the coupling occurs. It will be more serious the more times it is repeated throughout the code.
 * **Locality**: The distance between the actors involved in the coupling. It will be more serious the more distanced the actors are.
 
 <figure>
