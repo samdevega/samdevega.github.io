@@ -5,7 +5,7 @@ tags: ['object-oriented']
 ---
 Esta métrica para la calidad del software fue inventada por Meilir Page-Jones para permitir evaluar el grado de acoplamiento entre los distintos actores en un diseño orientado a objetos. Para ello categoriza el acoplamiento en distintos tipos, sirviendo como una herramienta de análisis para medir el impacto del acoplamiento y una guía para reducirlo.
 
-Para medir la forma de connascence existen de tres factores:
+Para medir la forma de connascence existen tres factores:
 
 * **Fuerza**: Cuando un cambio en un actor implica un cambio en otro. Será más grave cuanto más complejo y costoso sea el cambio.
 * **Grado**: La ocurrencia con la que se da el acoplamiento. Será más grave cuantas más veces se repita a lo largo del código.
