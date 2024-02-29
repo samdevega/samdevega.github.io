@@ -13,7 +13,7 @@ const size = '2rem'
     <ul>
       { socials.map(social => (
         <li>
-          <a href={social.url} title={social.platform}>
+          <a href={social.url} target='_blank'>
             <Icon size={size} name={social.platform.toLowerCase()} />
           </a>
         </li>
