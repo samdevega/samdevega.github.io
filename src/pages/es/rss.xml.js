@@ -3,7 +3,7 @@ import { translatePosts } from '../../scripts/posts'
 import { site, siteTitle } from '../../constants'
 import { useTranslations } from '../../i18n/utils'
 
-export async function get() {
+export async function GET() {
   const lang = 'es'
   const t = useTranslations(lang)
   const posts = await translatePosts(lang)
