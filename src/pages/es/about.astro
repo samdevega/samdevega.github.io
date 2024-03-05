@@ -18,6 +18,7 @@ const skills = ['CSS', 'Git', 'HTML', 'JavaScript', 'Laravel', 'MySQL', 'PHP', '
 <BaseLayout pageTitle={pageTitle}>
   <h1>{subtitle}</h1>
   <p>Soy {identity.name}. Vivo en {identity.country} y trabajo como {identity.occupation}.</p>
+  <p>Soy un jugador de equipo al que le gusta trabajar en equipos ágiles. La cobertura de test es imprescindible. Me gusta llamar a las cosas por su nombre técnico cuando hablo de código, prefiriendo la comunicación asertiva. La calidad del código, el mantenimiento y la corrección de errores son responsabilidad de todo el equipo para mí.</p>
   <p>Algunas de mis aficiones son {new Intl.ListFormat('es-ES', { style: 'long', type: 'conjunction' }).format(identity.hobbies)}.</p>
   {!!skills.length &&
     <p>Mis habilidades técnicas incluyen:</p>
