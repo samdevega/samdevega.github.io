@@ -87,7 +87,7 @@ Eloquent models generate several events that allow us to hook at different momen
 * `saved`: is launched every time a model is created or updated.
 * `deleted`: is launched every time a model is deleted.
 
-We can consult the complete list of events in the <a href="https://laravel.com/docs/10.x/eloquent#events" target="_blank">official documentation</a>.
+We can consult the complete list of events in the <a href="https://laravel.com/docs/11.x/eloquent#events" target="_blank">official documentation</a>.
 
 A typical event use case is to notify a user when something happens.
 

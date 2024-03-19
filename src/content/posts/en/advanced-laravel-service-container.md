@@ -203,7 +203,7 @@ class AppServiceProvider extends ServiceProvider {
   }
 }
 ```
-There are more cases of binding in the Service Container. You can consult them in <a href="https://laravel.com/docs/10.x/container#binding" target="_blank">the official documentation</a>.
+There are more cases of binding in the Service Container. You can consult them in <a href="https://laravel.com/docs/11.x/container#binding" target="_blank">the official documentation</a>.
 
 ## Conclusion
 Laravel Service Container allows us to manage dependency injection globally in our application, centralizing binding declaration and dependency resolution.
