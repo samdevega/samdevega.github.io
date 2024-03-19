@@ -87,7 +87,7 @@ Los modelos de Eloquent generan varios eventos que nos permiten enganchar en los
 * `saved`: se lanza cada vez que un modelo es creado o actualizado.
 * `deleted`: se lanza cada vez que un modelo es borrado.
 
-Podemos consultar la lista completa de eventos en la <a href="https://laravel.com/docs/10.x/eloquent#events" target="_blank">documentación oficial</a>.
+Podemos consultar la lista completa de eventos en la <a href="https://laravel.com/docs/11.x/eloquent#events" target="_blank">documentación oficial</a>.
 
 Un caso de uso típico de evento es notificar a un usuario cuando algo sucede.
 

@@ -52,4 +52,4 @@ use App\Jobs\ProcessDeliveryNotes;
 ProcessDeliveryNotes::dispatch($deliveryNotes);
 ```
 
-For more information about queued jobs we can consult the <a href="https://laravel.com/docs/10.x/queues" target="_blank">official documentation</a>.
+For more information about queued jobs we can consult the <a href="https://laravel.com/docs/11.x/queues" target="_blank">official documentation</a>.

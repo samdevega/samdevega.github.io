@@ -203,7 +203,7 @@ class AppServiceProvider extends ServiceProvider {
   }
 }
 ```
-Existen más casos de enlace en el contenedor de servicios. Puedes consultarlos en <a href="https://laravel.com/docs/10.x/container#binding" target="_blank">la documentación oficial</a>.
+Existen más casos de enlace en el contenedor de servicios. Puedes consultarlos en <a href="https://laravel.com/docs/11.x/container#binding" target="_blank">la documentación oficial</a>.
 
 ## Conclusión
 El contenedor de servicios de Laravel nos permite gestionar la inyección de dependencias a nivel global en nuestra aplicación, centralizando la declaración de enlaces y la resolución de dependencias.
