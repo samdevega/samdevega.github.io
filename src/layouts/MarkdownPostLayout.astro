@@ -54,9 +54,7 @@ const pageTitle = siteTitle +  ' - ' + subtitle
     max-width: 1248px;
 		width: calc(100% - 2rem);
   }
-</style>
 
-<style is:global>
   article {
     margin-bottom: 2rem;
   }
@@ -119,5 +117,38 @@ const pageTitle = siteTitle +  ' - ' + subtitle
   
   div ul a {
     text-decoration: none;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  table {
+    border: 0;
+    border-collapse: collapse;
+  }
+
+  table th, table td {
+    border: 1px solid rgba(170, 170, 170, 0.3);
+    padding: 1rem;
+    text-align: center;
+  }
+
+  table table {
+    margin: 1rem auto;
+  }
+
+  @media screen and (min-width: 636px) {
+    .flex-container {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      justify-content: center;
+    }
   }
 </style>
