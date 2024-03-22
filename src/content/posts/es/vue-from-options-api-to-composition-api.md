@@ -144,7 +144,7 @@ const username = computed(function() {
 
 La opción `methods` se reemplaza por funciones regulares.
 
-**Before:**
+**Antes:**
 ```javascript
 <script>
 export default {
@@ -176,7 +176,7 @@ function grow() {
 
 Por último, la opción `watch` se reemplaza por `watch()`.
 
-**Before:**
+**Antes:**
 ```javascript
 <script>
 export default {
