@@ -8,6 +8,7 @@ export const ui = {
   en: {
     'continue_reading': 'Continue reading',
     'footer.findme': 'Find me on',
+    'min_read': 'min read',
     'nav.about': 'About',
     'nav.close': 'Close',
     'nav.blog': 'Blog',
@@ -29,6 +30,7 @@ export const ui = {
   es: {
     'continue_reading': 'Continuar leyendo',
     'footer.findme': 'Encuéntrame en',
+    'min_read': 'minutos de lectura',
     'nav.about': 'Acerca',
     'nav.close': 'Cerrar',
     'nav.blog': 'Blog',
