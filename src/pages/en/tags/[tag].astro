@@ -31,7 +31,7 @@ const pageTitle = siteTitle + ' - ' + tag + ' ' + subtitle
   <h1>Related posts</h1>
   <p>Posts tagged with <em>{tag}</em>.</p>
   <ul>
-    {translatedPosts.map(post => <BlogPost date={post.data.pubDate} title={post.data.title} url={`/${lang}/blog/${post.slug.slice(3)}`} />)}
+    {translatedPosts.map(post => <BlogPost date={post.data.pubDate} minRead={post.data.minRead} title={post.data.title} url={`/${lang}/blog/${post.slug.slice(3)}`} />)}
   </ul>
 </BaseLayout>
 
