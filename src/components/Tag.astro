@@ -12,43 +12,18 @@ const { tag } = Astro.props
     background-color: #101010;
     border-radius: 0.25rem;
     color: #fefefe;
-    margin-left: 1rem;
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 0.75rem;
     position: relative;
     text-decoration: none;
     z-index: 2;
   }
 
-  .tag::after {
-    background-color: #101010;
-    border-radius: 0.25rem;
-    content: '';
-    display: block;
-    height: 1.25rem;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform: rotate(45deg) translateX(-3px) translateY(9px);
-    width: 1.25rem;
-    z-index: -1;
+  .tag:hover {
+    background-color: var(--highlight-color);
   }
 
-  .tag::before {
-    background-color: #fefefe;
-    border-radius: 50%;
-    content: '';
-    display: block;
-    height: 0.25rem;
-    left: -0.25rem;
-    position: absolute;
-    top: 0.75rem;
-    width: 0.25rem;
-    z-index: 1;
-  }
-
-  .tag:hover,
-  .tag:hover::after {
-    background-color: #bb6633;
+  html.dark .tag:hover {
+    background-color: var(--dark-highlight-color);
   }
 </style>
 

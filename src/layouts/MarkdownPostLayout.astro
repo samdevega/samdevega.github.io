@@ -51,7 +51,7 @@ const pageTitle = siteTitle +  ' - ' + subtitle
 <style is:global>
   main {
     align-self: center;
-    max-width: 1248px;
+    max-width: 760px;
 		width: calc(100% - 2rem);
   }
 
@@ -78,6 +78,10 @@ const pageTitle = siteTitle +  ' - ' + subtitle
     margin: 0 0 1.5rem 0;
     padding: 0;
     width: 150px;
+  }
+
+  html.dark article h1 + hr {
+    background-color: var(--dark-highlight-color);
   }
 
   article img {

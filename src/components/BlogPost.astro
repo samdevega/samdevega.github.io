@@ -22,15 +22,21 @@ const formattedDate = date.toISOString().split('T')[0]
   }
   a {
     box-shadow: 0 0 1px #aaaaaa;
-    color: inherit;
+    color: var(--dark-color) !important;
     display: flex;
     flex-direction: column;
     padding: 1rem 1.5rem;
     text-decoration: none;
     width: 100%;
   }
+  html.dark a {
+    color: var(--light-color) !important;
+  }
   a:hover {
-    box-shadow: 0 0 1px #bb6633;
+    box-shadow: 0 0 1px var(--highlight-color);
+  }
+  html.dark a:hover {
+    box-shadow: 0 0 1px var(--dark-highlight-color);
   }
   a div {
     display: flex;

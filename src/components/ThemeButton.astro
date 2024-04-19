@@ -18,7 +18,10 @@ const { size } = Astro.props
   }
 
   button:hover {
-    color: #bb6633;
+    color: var(--highlight-color);
+  }
+  html.dark button:hover {
+    color: var(--dark-highlight-color);
   }
 </style>
 
