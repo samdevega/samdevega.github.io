@@ -18,8 +18,9 @@
 
 :root {
   --light-color: #fefefe;
-  --dark-color: #101010;
-  --highlight-color: #bb6633;
+  --dark-color: #202020;
+  --highlight-color: #8F4400;
+  --dark-highlight-color: #F56C00;
 }
 
 html, body {
@@ -54,6 +55,8 @@ body.locked {
 
 main {
   flex-grow: 1;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.8181818181818181rem + 0.9090909090909091vw, 1.25rem);
   padding: 2rem 1rem;
 }
 
@@ -111,11 +114,13 @@ main ul ul {
 
 main li {
   line-height: 1.75rem;
+  line-height: clamp(1.75rem, 1.5681818181818181rem + 0.9090909090909091vw, 2rem);
   margin-bottom: 0.5rem;
 }
 
 main p {
   line-height: 1.75rem;
+  line-height: clamp(1.75rem, 1.5681818181818181rem + 0.9090909090909091vw, 2rem);
   margin: 0 0 1rem 0;
 }
 
@@ -124,8 +129,13 @@ main a {
   text-underline-offset: 0.25rem;
 }
 
+html.dark main a {
+  color: var(--dark-highlight-color);
+}
+
 pre {
   border-radius: 0.25rem;
+  font-size: 1rem;
   margin: 1.25rem 0 2rem 0;
   padding: 0.75rem;
 }

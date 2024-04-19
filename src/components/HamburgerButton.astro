@@ -19,8 +19,11 @@ const { size } = Astro.props
   }
   @media (hover: hover) {
     button:hover {
-      color: #bb6633;
+      color: var(--highlight-color);
       cursor: pointer;
+    }
+    html.dark button:hover {
+      color: var(--dark-highlight-color);
     }
   }
   @media screen and (min-width: 636px) {

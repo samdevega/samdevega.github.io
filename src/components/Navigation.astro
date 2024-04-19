@@ -73,12 +73,19 @@ const size = '1rem'
   a.active {
     color: inherit;
     text-decoration: underline;
-    text-decoration-color: #bb6633;
+    text-decoration-color: var(--highlight-color);
     text-underline-offset: 0.4rem;
+  }
+  html.dark a.active {
+    text-decoration-color: var(--dark-highlight-color);
   }
   li:last-child a:hover,
   a:not(.active):hover {
-    color: #bb6633;
+    color: var(--highlight-color);
+  }
+  html.dark li:last-child a:hover,
+  html.dark a:not(.active):hover {
+    color: var(--dark-highlight-color);
   }
   @media screen and (min-width: 636px) {
     nav, nav.expanded {
