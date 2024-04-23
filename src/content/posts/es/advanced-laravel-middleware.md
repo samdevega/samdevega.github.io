@@ -1,5 +1,5 @@
 ---
-title: "Laravel Avanzado: Middleware"
+title: "Laravel avanzado: Middleware"
 pubDate: 2024-02-23T20:00:00Z
 tags: ['laravel']
 ---
