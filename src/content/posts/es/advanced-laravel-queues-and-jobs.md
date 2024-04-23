@@ -1,5 +1,5 @@
 ---
-title: "Laravel Avanzado: Queues y Jobs"
+title: "Laravel avanzado: Queues y Jobs"
 pubDate: 2024-02-29T19:30:00Z
 tags: ['laravel']
 ---

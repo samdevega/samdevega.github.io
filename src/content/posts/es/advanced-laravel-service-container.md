@@ -1,5 +1,5 @@
 ---
-title: "Laravel Avanzado: Service Container"
+title: "Laravel avanzado: Service Container"
 pubDate: 2024-02-19T20:40:00Z
 tags: ['laravel']
 ---

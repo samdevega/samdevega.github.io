@@ -1,5 +1,5 @@
 ---
-title: "Laravel Avanzado: Eloquent ORM"
+title: "Laravel avanzado: Eloquent ORM"
 pubDate: 2024-03-07T20:00:00Z
 tags: ['laravel']
 ---
