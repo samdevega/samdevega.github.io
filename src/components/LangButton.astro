@@ -6,7 +6,7 @@ const lang = Object.keys(languages).find(lang => lang !== getLangFromUrl(Astro.u
 const translatePath = useTranslatedPath(lang)
 const currentPath = Astro.url.pathname.replace(/(en|es)\//, '')
 ---
-<a href={translatePath(currentPath)}>
+<a href={translatePath(currentPath)} aria-label={languages[lang]} title={languages[lang]}>
   {lang}
 </a>
 
