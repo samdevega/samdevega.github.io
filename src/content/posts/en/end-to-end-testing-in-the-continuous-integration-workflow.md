@@ -1,7 +1,7 @@
 ---
 title: "E2E Testing in the Continuous Integration Workflow"
 pubDate: 2024-04-09T21:00:00Z
-tags: ['devops']
+tags: ['devops', 'testing']
 ---
 The Continuous Integration is the practice of merging all developer's working copies to a shared mainline.  
 End to End Testing is the methodology for ensuring that applications behave as expected. It is done by the end user's perspective and simulates an scenario as close as possible to reality.
