@@ -1,7 +1,7 @@
 ---
 title: "Tests E2E en el flujo de trabajo de Integración Continua"
 pubDate: 2024-04-09T21:00:00Z
-tags: ['devops']
+tags: ['devops', 'testing']
 ---
 La Integración Continua es la práctica de fusionar todas las copias de trabajo del desarrollador en una línea principal compartida.
 End to End Testing es la metodología para garantizar que las aplicaciones se comporten como se espera. Se realiza desde la perspectiva del usuario final y simula un escenario lo más cercano posible a la realidad.
