@@ -1,7 +1,7 @@
 {
   "name": "blog",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "CHOKIDAR_USEPOLLING=true astro dev",
     "start": "astro dev",
@@ -11,8 +11,8 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.5",
-    "astro": "^4.4.6"
+    "@astrojs/rss": "^4.0.6",
+    "astro": "^4.9.2"
   },
   "devDependencies": {
     "gh-pages": "^6.0.0"
