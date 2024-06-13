@@ -40,7 +40,7 @@ describe('MyClass', function () {
   });
 });
 ```
-We can check the full list of Pest expectations visiting its <a href="https://pestphp.com/docs/expectations" target="_blank">official documentation</a>.
+We can check the full list of Pest expectations by visiting its <a href="https://pestphp.com/docs/expectations" target="_blank">official documentation</a>.
 
 Pest hooks can be used for setting up a test or a test suite. The available methods are `beforeEach()`, `afterEach()`, `beforeAll()` and `afterAll()`.
 ```php
