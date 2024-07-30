@@ -21,6 +21,7 @@
   --dark-color: #202020;
   --highlight-color: #8F4400;
   --dark-highlight-color: #F56C00;
+  scroll-behavior: smooth;
 }
 
 html, body {
