@@ -109,7 +109,7 @@ e2e_job:
     - if: '$CI_COMMIT_BRANCH =~ /^feature-|^main$/'
 ```
 
-This will create an stage called `e2e` in our pipeline with a job that runs these three scripts every time we push a commit to a branch with the pattern `feature-*` or to the `main` branch (useful when performing a merge).  
+This will create a stage called `e2e` in our pipeline with a job that runs these three scripts every time we push a commit to a branch with the pattern `feature-*` or to the `main` branch (useful when performing a merge).  
 The second script will run the Cypress container, which will run our E2E test. If the test fails, the job in the `e2e` stage will fail too, preventing us from moving into the deployment stage and will protect the environment.
 
 For more information about GitLab CI/CD, we can visit its <a href="https://docs.gitlab.com/ee/ci/" target="_blank">official documentation</a>.
