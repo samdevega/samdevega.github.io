@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.7",
-    "astro": "^4.15.10"
+    "astro": "^4.15.11"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
