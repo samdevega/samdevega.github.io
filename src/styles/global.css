@@ -21,6 +21,8 @@
   --dark-color: #202020;
   --highlight-color: #8F4400;
   --dark-highlight-color: #F56C00;
+  --quote-color: rgba(150, 150, 150, 0.3);
+  --dark-quote-color: rgba(250, 250, 250, 0.3);
   scroll-behavior: smooth;
 }
 
@@ -139,4 +141,14 @@ pre {
   font-size: 1rem;
   margin: 1.25rem 0 2rem 0;
   padding: 0.75rem;
+}
+
+blockquote {
+  border-left: 0.3rem solid var(--quote-color);
+  margin: 1.25rem 1rem;
+  padding-left: 0.75rem;
+}
+
+html.dark blockquote {
+  border-left: 0.3rem solid var(--dark-quote-color);
 }
