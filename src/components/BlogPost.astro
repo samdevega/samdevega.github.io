@@ -21,6 +21,7 @@ const formattedDate = date.toISOString().split('T')[0]
     margin: 0;
   }
   a {
+    background-color: var(--light-color);
     box-shadow: 0 0 1px #aaaaaa;
     color: var(--dark-color) !important;
     display: flex;
@@ -30,6 +31,7 @@ const formattedDate = date.toISOString().split('T')[0]
     width: 100%;
   }
   html.dark a {
+    background-color: var(--dark-color);
     color: var(--light-color) !important;
   }
   a:hover {
