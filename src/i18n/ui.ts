@@ -8,6 +8,7 @@ export const ui = {
   en: {
     'continue_reading': 'Continue reading',
     'footer.findme': 'Find me on',
+    'latest_posts': 'Latest posts',
     'min_read': 'min read',
     'nav.about': 'About',
     'nav.close': 'Close',
@@ -25,11 +26,13 @@ export const ui = {
     'tags.description': 'Find posts by tag.',
     'theme.dark': 'Dark Theme',
     'theme.light': 'Light Theme',
+    'view_all': 'View all',
     'written_by': 'Written by',
   },
   es: {
     'continue_reading': 'Continuar leyendo',
     'footer.findme': 'Encuéntrame en',
+    'latest_posts': 'Últimas publicaciones',
     'min_read': 'minutos de lectura',
     'nav.about': 'Acerca',
     'nav.close': 'Cerrar',
@@ -47,6 +50,7 @@ export const ui = {
     'tags.description': 'Encontrar publicaciones por etiqueta.',
     'theme.dark': 'Tema oscuro',
     'theme.light': 'Tema claro',
+    'view_all': 'Ver todas',
     'written_by': 'Escrito por',
   }
 } as const

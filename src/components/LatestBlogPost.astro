@@ -1,0 +1,68 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const { date, title, url, minRead } = Astro.props
+const formattedDate = date.toISOString().split('T')[0]
+---
+<li><a href={url}>
+  <h5>{title}</h5>
+  <div>
+    <small>{formattedDate}</small>
+    <small>{minRead} {t('min_read')}</small>
+  </div>
+</a></li>
+
+<style>
+  li {
+    align-items: stretch;
+    display: flex;
+    flex: 0 0 100%;
+    margin: 0;
+  }
+
+  a {
+    background-color: var(--light-color);
+    box-shadow: 0 0 1px #aaaaaa;
+    color: var(--dark-color) !important;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  html.dark a {
+    background-color: var(--dark-color);
+    color: var(--light-color) !important;
+  }
+
+  a:hover {
+    box-shadow: 0 0 1px var(--highlight-color);
+  }
+
+  html.dark a:hover {
+    box-shadow: 0 0 1px var(--dark-highlight-color);
+  }
+
+  a div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  @media screen and (min-width: 636px) {
+    li:not(:first-child) {
+      flex: 1;
+    }
+	}
+
+	@media screen and (min-width: 1248px) {
+    li {
+      flex: 1;
+    }
+	}
+</style>

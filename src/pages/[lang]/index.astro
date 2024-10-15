@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
-import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+import LatestBlogPost from '../../components/LatestBlogPost.astro'
+import { translatePosts } from '../../scripts/posts.js'
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils'
 import { languages } from '../../i18n/ui'
 import { siteTitle } from '../../constants'
 
@@ -12,22 +14,51 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 const subtitle = t('software_developer')
 const pageTitle = siteTitle + ' - ' + subtitle
+const latestPosts = (await translatePosts(lang)).slice(0, 3)
+const translatePath = useTranslatedPath(lang)
 ---
 <BaseLayout pageTitle={pageTitle}>
-	<div>
+	<section>
 		<h1>{siteTitle}</h1>
 		<h2>{subtitle}</h2>
-	</div>
+		<div>
+			<h3>{t('latest_posts')}</h3>
+			<ul>
+				{ latestPosts.map(post => <LatestBlogPost date={post.data.pubDate} minRead={post.data.minRead} title={post.data.title} url={`/${lang}/blog/${post.slug.slice(3)}`} />) }
+			</ul>
+			<a href={translatePath('/blog/1')}>{t('view_all')}</a>
+		</div>
+	</section>
 </BaseLayout>
 
 <style>
-	div {
-		align-items: center;
+	section {
 		display: flex;
 		flex-direction: column;
 	}
+
 	h1, h2 {
 		text-align: center;
+	}
+
+	section div {
+    align-self: center;
+		margin: 2rem 0;
+    max-width: 1248px;
+		width: calc(100% - 2rem);
+  }
+
+	div a {
+		text-decoration: none;
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		list-style-type: none;
+		margin-top: 1rem;
+		padding: 0;
 	}
 </style>
 
