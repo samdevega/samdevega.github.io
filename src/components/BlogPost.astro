@@ -3,11 +3,16 @@ import { getLangFromUrl, useTranslations } from '../i18n/utils'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
-const { date, title, url, minRead } = Astro.props
+const { date, title, url, minRead, heading = 1, size = '.heading-1' } = Astro.props
 const formattedDate = date.toISOString().split('T')[0]
 ---
 <li><a href={url}>
-  <h5>{title}</h5>
+  { heading === 6 && <h6 class={size}>{title}</h6> }
+  { heading === 5 && <h5 class={size}>{title}</h5> }
+  { heading === 4 && <h4 class={size}>{title}</h4> }
+  { heading === 3 && <h3 class={size}>{title}</h3> }
+  { heading === 2 && <h2 class={size}>{title}</h2> }
+  { heading === 1 && <h1 class={size}>{title}</h1> }
   <div>
     <small>{formattedDate}</small>
     <small>{minRead} {t('min_read')}</small>

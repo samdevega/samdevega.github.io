@@ -68,39 +68,34 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
   margin: 0.5rem 0 1rem 0;
 }
 
-main h1 {
+main h1:not([class^="heading-"]), main .heading-1 {
   font-size: 2.5rem;
   line-height: 3rem;
 }
 
-main h2 {
+main h2:not([class^="heading-"]), main .heading-2 {
   font-size: 2.25rem;
   line-height: 2.75rem;
 }
 
-main h3 {
+main h3:not([class^="heading-"]), main .heading-3 {
   font-size: 2rem;
   line-height: 2.5rem;
 }
 
-main h4 {
+main h4:not([class^="heading-"]), main .heading-4 {
   font-size: 1.75rem;
   line-height: 2.25rem;
 }
 
-main h5 {
+main h5:not([class^="heading-"]), main .heading-5 {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-main h5 {
+main h6:not([class^="heading-"]), main .heading-6 {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-main h6 {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 main ol,

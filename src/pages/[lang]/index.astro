@@ -24,7 +24,14 @@ const translatePath = useTranslatedPath(lang)
 		<div>
 			<h3>{t('latest_posts')}</h3>
 			<ul>
-				{ latestPosts.map(post => <LatestBlogPost date={post.data.pubDate} minRead={post.data.minRead} title={post.data.title} url={`/${lang}/blog/${post.slug.slice(3)}`} />) }
+				{ latestPosts.map(post => <LatestBlogPost
+					date={post.data.pubDate}
+					minRead={post.data.minRead}
+					title={post.data.title}
+					url={`/${lang}/blog/${post.slug.slice(3)}`}
+					heading={4}
+					size='heading-5'
+				/>) }
 			</ul>
 			<a href={translatePath('/blog/1')}>{t('view_all')}</a>
 		</div>
