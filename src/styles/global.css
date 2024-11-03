@@ -24,6 +24,7 @@
   --quote-color: rgba(150, 150, 150, 0.3);
   --dark-quote-color: rgba(250, 250, 250, 0.3);
   scroll-behavior: smooth;
+  scroll-padding: 5rem;
 }
 
 html, body {
