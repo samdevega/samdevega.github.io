@@ -6,6 +6,12 @@
 
 @font-face {
   font-display: swap;
+  font-family: 'CascadiaCode';
+  src: url(/fonts/CascadiaCode.ttf) format('truetype');
+}
+
+@font-face {
+  font-display: swap;
   font-family: 'PlayfairDisplay';
   src: url(/fonts/PlayfairDisplay.ttf) format('truetype');
 }
@@ -67,7 +73,7 @@ main {
 }
 
 main h1, main h2, main h3, main h4, main h5, main h6 {
-  font-family: 'PlayfairDisplay';
+  font-family: 'PlayfairDisplay', sans-serif;
   margin: 0.5rem 0 1rem 0;
 }
 
@@ -136,9 +142,13 @@ html.dark main a {
 
 pre {
   border-radius: 0.25rem;
-  font-size: 1rem;
   margin: 1rem 0 2rem 0;
   padding: 0.75rem;
+}
+
+code {
+  font-family: 'CascadiaCode', monospace;
+  font-size: 1rem;
 }
 
 blockquote {
