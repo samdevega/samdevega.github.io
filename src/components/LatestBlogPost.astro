@@ -3,7 +3,7 @@ import { getLangFromUrl, useTranslations } from '../i18n/utils'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
-const { date, title, url, minRead, heading = 1, size = '.heading-1' } = Astro.props
+const { date, title, extract, url, minRead, heading = 1, size = '.heading-1' } = Astro.props
 const formattedDate = date.toISOString().split('T')[0]
 ---
 <li><a href={url}>
@@ -13,6 +13,7 @@ const formattedDate = date.toISOString().split('T')[0]
   { heading === 3 && <h3 class={size}>{title}</h3> }
   { heading === 2 && <h2 class={size}>{title}</h2> }
   { heading === 1 && <h1 class={size}>{title}</h1> }
+  <p>{extract}</p>
   <div>
     <small>{formattedDate}</small>
     <small>{minRead} {t('min_read')}</small>
@@ -57,6 +58,33 @@ const formattedDate = date.toISOString().split('T')[0]
     gap: 1rem;
     justify-content: space-between;
     margin-top: auto;
+  }
+
+  
+  p {
+    font-size: clamp(1rem, 0.8181818181818181rem + 0.9090909090909091vw, 1.125rem);
+    position: relative;
+  }
+
+  p:after {
+    position: absolute;
+    bottom: 0;  
+    height: 100%;
+    left: 0;
+    width: 100%;
+    content: "";
+    background: linear-gradient(to top,
+      rgba(var(--light-color-rgb), 1) 0%, 
+      rgba(var(--light-color-rgb), 0) 80%
+    );
+    pointer-events: none;
+  }
+
+  html.dark p:after {
+    background: linear-gradient(to top,
+      rgba(var(--dark-color-rgb), 1) 0%, 
+      rgba(var(--dark-color-rgb), 0) 80%
+    );
   }
 
   @media screen and (min-width: 636px) {

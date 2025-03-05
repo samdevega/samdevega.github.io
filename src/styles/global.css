@@ -23,8 +23,10 @@
 }
 
 :root {
-  --light-color: #fefefe;
-  --dark-color: #202020;
+  --light-color-rgb: 254, 254, 254;
+  --light-color: rgb(var(--light-color-rgb));
+  --dark-color-rgb: 32, 32, 32;
+  --dark-color: rgb(var(--dark-color-rgb));
   --highlight-color: #8F4400;
   --dark-highlight-color: #F56C00;
   --quote-color: rgba(150, 150, 150, 0.3);

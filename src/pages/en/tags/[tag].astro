@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro'
 import BlogPost from '../../../components/BlogPost.astro'
-import { posts } from '../../../scripts/posts'
+import { posts, translatePosts } from '../../../scripts/posts'
 import { getLangFromUrl } from '../../../i18n/utils'
 import { siteTitle } from '../../../constants'
 
@@ -16,15 +16,14 @@ export async function getStaticPaths() {
 
 	return tags.map(tag => ({
 		params: { tag },
-		props: { filteredPosts: posts.filter(post => post.data.tags.includes(tag)).sort() }
 	}))
 }
 
 const lang = getLangFromUrl(Astro.url)
 const subtitle = 'tag'
 const { tag } = Astro.params
-const { filteredPosts } = Astro.props
-const translatedPosts = filteredPosts.filter(post => post.slug.includes(`${lang}/`))
+const unfilteredPosts = await translatePosts(lang)
+const translatedPosts = unfilteredPosts.filter(post => post.data.tags.includes(tag)).sort()
 const pageTitle = siteTitle + ' - ' + tag + ' ' + subtitle
 ---
 <BaseLayout pageTitle={pageTitle}>
@@ -35,6 +34,7 @@ const pageTitle = siteTitle + ' - ' + tag + ' ' + subtitle
 			date={post.data.pubDate}
 			minRead={post.data.minRead}
 			title={post.data.title}
+			extract={post.data.extract}
 			url={`/${lang}/blog/${post.slug.slice(3)}`}
 			heading={2}
 			size={'heading-5'}
