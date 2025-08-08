@@ -146,6 +146,28 @@ const pageTitle = siteTitle +  ' - ' + subtitle
     margin: 1rem auto;
   }
 
+  .pre-header {
+    position: relative;
+  }
+
+  .copy-button {
+    background-color: var(--light-color);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    margin-left: auto;
+    opacity: 0.9;
+    padding: 0.25rem 0.5rem;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.75rem;
+  }
+
+  .copy-button:hover:not(:disabled) {
+    opacity: 1;
+  }
+
   @media screen and (min-width: 636px) {
     .flex-container {
       align-items: flex-start;
@@ -156,3 +178,7 @@ const pageTitle = siteTitle +  ' - ' + subtitle
     }
   }
 </style>
+
+<script>
+  import '../scripts/copy.js';
+</script>

@@ -6,13 +6,13 @@ tags: ['vite']
 Si has llegado hasta aquí, probablemente te has encontrado con una de las variantes de este error en la terminal al intentar ejecutar un proyecto de <a href="https://es.vite.dev/" target="_blank">Vite</a>.
 
 ## El error
-```shell
+```plaintext
 Error: Cannot find module @rollup/rollup-linux-x64-gnu.
 ```
 
 La parte interesante del mismo es lo que va a continuación.
 
-```shell
+```
 npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828).
 Please try npm i again after removing both package-lock.json and node_modules directory.
 ```

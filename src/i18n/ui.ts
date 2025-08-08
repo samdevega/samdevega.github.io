@@ -7,6 +7,8 @@ export const showDefaultLang = true
 export const ui = {
   en: {
     'continue_reading': 'Continue reading',
+    'copied': 'Copied!',
+    'copy': 'Copy',
     'footer.findme': 'Find me on',
     'latest_posts': 'Latest posts',
     'min_read': 'min read',
@@ -31,6 +33,8 @@ export const ui = {
   },
   es: {
     'continue_reading': 'Continuar leyendo',
+    'copied': '¡Copiado!',
+    'copy': 'Copiar',
     'footer.findme': 'Encuéntrame en',
     'latest_posts': 'Últimas publicaciones',
     'min_read': 'minutos de lectura',
