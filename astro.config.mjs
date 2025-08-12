@@ -1,9 +1,9 @@
 import { defineConfig } from 'astro/config'
-import ayuMirage from '/src/styles/ayu-mirage.json'
+import kopiLuwak from '/src/styles/kopi-luwak.json'
 
 export default defineConfig({
   markdown: {
-    shikiConfig: { theme: ayuMirage },
+    shikiConfig: { theme: kopiLuwak },
   },
   site: 'https://samdevega.github.io',
 })
