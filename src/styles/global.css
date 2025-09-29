@@ -27,8 +27,8 @@
   --light-color: rgb(var(--light-color-rgb));
   --dark-color-rgb: 32, 32, 32;
   --dark-color: rgb(var(--dark-color-rgb));
-  --highlight-color: #8F4400;
-  --dark-highlight-color: #F56C00;
+  --highlight-color: #005D93;
+  --dark-highlight-color: #5EB4E5;
   --quote-color: rgba(150, 150, 150, 0.3);
   --dark-quote-color: rgba(250, 250, 250, 0.3);
   scroll-behavior: smooth;
@@ -161,6 +161,14 @@ blockquote {
 
 html.dark blockquote {
   border-left: 0.3rem solid var(--dark-quote-color);
+}
+
+html.dark {
+  .astro-code,
+  .astro-code span {
+    color: var(--shiki-dark) !important;
+    background-color: var(--shiki-dark-bg) !important;
+  }
 }
 
 @media screen and (min-width: 636px) {

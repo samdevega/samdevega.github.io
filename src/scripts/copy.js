@@ -8,10 +8,6 @@ codeNodes.forEach(node => {
   let timeoutId
   const preHeader = document.createElement('div')
   const previousDomNode = node.parentElement.previousElementSibling
-  const preBackgroundColor = getComputedStyle(node.parentElement).backgroundColor
-  const preColor = getComputedStyle(node.parentElement).color
-  preHeader.style.backgroundColor = preBackgroundColor
-  preHeader.style.color = preColor
   const isPreTitle = previousDomNode
     && previousDomNode.tagName === 'P'
     && previousDomNode.children.length === 1

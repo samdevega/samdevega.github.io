@@ -34,7 +34,7 @@ const translatePath = useTranslatedPath(lang)
 					size='heading-5'
 				/>) }
 			</ul>
-			<a href={translatePath('/blog/1')}>{t('view_all')}</a>
+			<a href={translatePath('/blog/1')}>{t('view_all')}  &rsaquo;</a>
 		</div>
 	</section>
 </BaseLayout>
@@ -66,15 +66,5 @@ const translatePath = useTranslatedPath(lang)
 		list-style-type: none;
 		margin-top: 1rem;
 		padding: 0;
-	}
-</style>
-
-<style is:global>
-	main {
-		background-color: #f8f5f1;
-	}
-
-	html.dark main {
-		background-color: #484541;
 	}
 </style>
