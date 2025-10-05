@@ -2,6 +2,9 @@
 title: "How to fix the \"Cannot find module @rollup\" error in a Vite project"
 pubDate: 2025-01-27T21:00:00Z
 tags: ['vite']
+image:
+  url: "/images/vite.jpg"
+  alt: "Vite documentation website"
 ---
 If you've made it this far, you've probably encountered one of the variants of this error in the terminal when trying to run a <a href="https://vite.dev/" target="_blank">Vite</a> project.
 

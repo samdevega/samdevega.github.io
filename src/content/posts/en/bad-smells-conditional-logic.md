@@ -2,6 +2,9 @@
 title: "Bad Smells: Conditional logic"
 pubDate: 2019-03-19T21:46:06Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Bad smells coming from the code displayed in a laptop"
 ---
 It is difficult to reason since we have to consider multiple paths through the code.
 It is tempting to add special use cases instead of developing a general use case.

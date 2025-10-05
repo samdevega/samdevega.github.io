@@ -2,6 +2,9 @@
 title: "Laravel: Cache"
 pubDate: 2024-04-23T22:10:00Z
 tags: ['laravel']
+image:
+  url: "/images/laravel.jpg"
+  alt: "Development of a web application using Laravel"
 ---
 Some requests in an application can imply the execution of tasks that are CPU intensive or takes a lot of time to be done. For these cases, we can cache the resulting data for some time so it can be retrieved in a fast way on subsequent requests instead of having to execute the expensive task again in order to improve an application performance.
 

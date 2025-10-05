@@ -2,6 +2,9 @@
 title: "Laravel: Eloquent ORM"
 pubDate: 2024-03-07T20:00:00Z
 tags: ['laravel']
+image:
+  url: "/images/laravel.jpg"
+  alt: "Development of a web application using Laravel"
 ---
 Eloquent, the ORM used by Laravel, has some features that can facilitate access to data under specific conditions.
 

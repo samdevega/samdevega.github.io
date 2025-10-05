@@ -1,22 +1,28 @@
 ---
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import Icon from './Icon.astro'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
-const { date, title, extract, url, minRead, heading = 1, size = '.heading-1' } = Astro.props
+const { image, date, title, extract, url, minRead, heading = 1, size = '.heading-1' } = Astro.props
 const formattedDate = date.toISOString().split('T')[0]
 ---
 <li><a href={url}>
-  { heading === 6 && <h6 class={size}>{title}</h6> }
-  { heading === 5 && <h5 class={size}>{title}</h5> }
-  { heading === 4 && <h4 class={size}>{title}</h4> }
-  { heading === 3 && <h3 class={size}>{title}</h3> }
-  { heading === 2 && <h2 class={size}>{title}</h2> }
-  { heading === 1 && <h1 class={size}>{title}</h1> }
-  <p set:html={extract}></p>
+  <picture>
+    {image.url ? <img src={image.url} alt={image.alt} /> : <Icon size='3rem' name='picture' /> }
+  </picture>
   <div>
-    <small>{formattedDate}</small>
-    <small>{minRead} {t('min_read')}</small>
+    { heading === 6 && <h6 class={size}>{title}</h6> }
+    { heading === 5 && <h5 class={size}>{title}</h5> }
+    { heading === 4 && <h4 class={size}>{title}</h4> }
+    { heading === 3 && <h3 class={size}>{title}</h3> }
+    { heading === 2 && <h2 class={size}>{title}</h2> }
+    { heading === 1 && <h1 class={size}>{title}</h1> }
+    <p>{extract}</p>
+    <div>
+      <small>{formattedDate}</small>
+      <small>{minRead} {t('min_read')}</small>
+    </div>
   </div>
 </a></li>
 
@@ -29,12 +35,31 @@ const formattedDate = date.toISOString().split('T')[0]
 
   a {
     background-color: var(--light-color);
+    color: var(--dark-color);
     box-shadow: 0 0 1px #aaaaaa;
-    color: var(--dark-color) !important;
     display: flex;
     flex-direction: column;
-    padding: 1rem 1.5rem;
     text-decoration: none;
+    width: 100%;
+  }
+
+  a picture {
+    align-items: center;
+    aspect-ratio: 16/9;
+    background-color: rgba(var(--dark-color-rgb), 0.5);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  html.dark a picture {
+    background-color: rgba(var(--light-color-rgb), 0.5);
+  }
+  
+  a img {
+    aspect-ratio: 16:9;
+    height: 100%;
+    object-fit: cover;
     width: 100%;
   }
 
@@ -51,7 +76,14 @@ const formattedDate = date.toISOString().split('T')[0]
     box-shadow: 0 0 1px var(--dark-highlight-color);
   }
 
-  a div {
+  a > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem 1.5rem;
+  }
+
+  a > div > div {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;

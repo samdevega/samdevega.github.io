@@ -2,6 +2,9 @@
 title: "Hoja de trucos y alias de Git"
 pubDate: 2024-10-04T22:25:00Z
 tags: ['git']
+image:
+  url: "/images/git.jpg"
+  alt: "Una vista de un flujo y diferencias de git"
 ---
 Esta publicación presenta los comandos de Git más importantes y utilizados para una fácil referencia, además de algunos alias de Git útiles.
 

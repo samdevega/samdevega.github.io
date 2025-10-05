@@ -2,6 +2,9 @@
 title: "Bad Smells: Hosting the change"
 pubDate: 2019-03-20T17:31:25Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Bad smells coming from the code displayed in a laptop"
 ---
 Some problems become more apparent when you try to change the code. Ideally, a change decision affects only a single location. When this does not happen, it is a sign of code duplication. Detecting these problems usually has other benefits such as facilitating the testability of the code.
 

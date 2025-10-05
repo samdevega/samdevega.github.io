@@ -2,6 +2,9 @@
 title: "React: More hooks explained"
 pubDate: 2025-08-17T18:00:00Z
 tags: ['react']
+image:
+  url: "/images/react.jpg"
+  alt: "Development of a web application using React"
 ---
 React version 18 introduced new hooks, not included in the previous article <a href="/en/blog/react-hooks-explained">React: Hooks explained</a>, which will be explained here:
 * <a href="#useformstatus">useFormStatus</a>

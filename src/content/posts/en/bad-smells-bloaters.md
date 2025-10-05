@@ -2,6 +2,9 @@
 title: "Bad Smells: Bloaters"
 pubDate: 2019-03-19T20:42:59Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Bad smells coming from the code displayed in a laptop"
 ---
 The bloaters that we can find within a class are:
 

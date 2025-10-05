@@ -2,6 +2,9 @@
 title: "React: Hooks explicados"
 pubDate: 2024-05-28T20:20:00Z
 tags: ['react']
+image:
+  url: "/images/react.jpg"
+  alt: "Desarrollar de una aplicación web usando React"
 ---
 Los hooks son utilidades que nos permiten utilizar diferentes características de React de nuestros componentes funcionales. Hay varios hooks de serie, pero incluso podemos construir los nuestros propios usando los de serie como base.
 

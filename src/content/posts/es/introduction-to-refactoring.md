@@ -2,6 +2,9 @@
 title: 'Introducción al refactoring'
 pubDate: 2019-03-15T18:48:02Z
 tags: ['refactoring']
+image:
+  url: "/images/refactoring.jpg"
+  alt: "Un monitor mostrando un editor de código"
 ---
 Comencemos por la definición. Más concretamente, la que puede encontrarse en <a href="https://es.wikipedia.org/wiki/Refactorizaci%C3%B3n" target="_blank">este artículo de Wikipedia</a>.
 

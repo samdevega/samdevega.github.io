@@ -2,6 +2,9 @@
 title: "Orientado a objetos: Polimorfismo procedural"
 pubDate: 2021-03-12T09:00:44Z
 tags: ['object-oriented']
+image:
+  url: "/images/procedural-polymorphism.jpg"
+  alt: "Un velero con alas frente a un hidroavión"
 ---
 ## Sobre el polimorfismo en el diseño orientado a objetos
 

@@ -2,6 +2,9 @@
 title: "Malos olores: Duplicación"
 pubDate: 2019-03-19T21:29:35Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Malos olores viniendo del código mostrado en un portátil"
 ---
 La duplicación causa los siguientes problemas:
 

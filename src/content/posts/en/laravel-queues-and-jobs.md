@@ -2,6 +2,9 @@
 title: "Laravel: Queues and Jobs"
 pubDate: 2024-02-29T19:30:00Z
 tags: ['laravel']
+image:
+  url: "/images/laravel.jpg"
+  alt: "Development of a web application using Laravel"
 ---
 In Laravel we can delegate the execution of heavy tasks in time or resources to the background, preventing a web request from taking a long time. To do this we can use queued jobs.
 

@@ -2,6 +2,9 @@
 title: "Malos olores: Olores leves"
 pubDate: 2019-03-19T20:42:59Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Malos olores viniendo del código mostrado un el portátil"
 ---
 Los malos olores leves que podemos encontrar dentro de una clase son:
 

@@ -2,6 +2,9 @@
 title: "Bad Smells: Naming"
 pubDate: 2019-03-19T21:02:05Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Bad smells coming from the code displayed in a laptop"
 ---
 Some tools to choose names can be:
 

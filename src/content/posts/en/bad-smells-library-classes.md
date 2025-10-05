@@ -2,6 +2,9 @@
 title: "Bad Smells: Library classes"
 pubDate: 2019-03-20T18:44:47Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Bad smells coming from the code displayed in a laptop"
 ---
 A modern application will use library classes. Sometimes these put us in a dilemma. We want the bookstore to be different, but we don't want to change it. Even when it is possible to change libraries, it carries risks: It affects other clients and this implies redoing our changes for future versions of the library.
 

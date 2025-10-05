@@ -15,7 +15,7 @@ export const getStaticPaths = async ({ paginate }) => {
   const posts = await translatePosts(lang)
   return paginate(posts, {
     params: { lang },
-    pageSize: 12,
+    pageSize: 9,
   })
 }
 
@@ -26,6 +26,7 @@ const { page } = Astro.props;
 	<p>This is where I post about software development topics.</p>
 	<ul>
 		{ page.data.map(post => <BlogPost
+      image={post.data.image}
       date={post.data.pubDate}
       minRead={post.data.minRead}
       title={post.data.title}
@@ -60,7 +61,7 @@ const { page } = Astro.props;
 <style>
 	ul {
 		display: grid;
-		gap: 1rem;
+		gap: 2rem;
 		grid-template-columns: 100%;
 		grid-template-rows: auto;
 		list-style-type: none;
@@ -70,7 +71,7 @@ const { page } = Astro.props;
 
   ul + ul {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     list-style-type: none;
     margin-top: 1.25rem;
     padding: 0;

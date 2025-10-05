@@ -2,6 +2,9 @@
 title: "Connascence: A metric for coupling"
 pubDate: 2023-12-06T17:20:00Z
 tags: ['object-oriented']
+image:
+  url: "/images/connascence.jpg"
+  alt: "A monitor showing code and metrics"
 ---
 This metric for software quality was invented by Meilir Page-Jones to allow evaluating the degree of coupling between the different actors in an object-oriented design. To do this, it categorizes coupling into different types, serving as an analysis tool to measure the impact of coupling and a guide to reduce it.
 

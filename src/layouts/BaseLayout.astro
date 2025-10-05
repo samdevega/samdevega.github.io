@@ -4,7 +4,7 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 
-const { pageTitle } = Astro.props
+const { pageTitle, metas } = Astro.props
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
@@ -19,6 +19,7 @@ const t = useTranslations(lang)
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={t('site_description')} />
     <meta name="generator" content={Astro.generator} />
+    <Fragment set:html={metas} />
     <title>{pageTitle}</title>
   </head>
   <body>

@@ -2,6 +2,9 @@
 title: "Laravel: Service Container"
 pubDate: 2024-02-19T20:40:00Z
 tags: ['laravel']
+image:
+  url: "/images/laravel.jpg"
+  alt: "Desarrollar una aplicación web usando Laravel"
 ---
 El contenedor de servicios de Laravel es una caja de herramientas que nos facilita el acceso a las diferentes herramientas de nuestro código. Esto se consigue mediante la inyección de dependencias y opcionalmente con enlaces.
 Si bien Laravel ya nos provee en la mayoría de los casos con una resolución de cero configuración para la inyección de dependencias, hay dos casos en los que tendremos que hacer uso del contenedor de servicios:

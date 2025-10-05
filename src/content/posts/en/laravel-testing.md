@@ -2,6 +2,9 @@
 title: "Laravel: Testing"
 pubDate: 2024-05-23T21:30:00Z
 tags: ['laravel', 'testing']
+image:
+  url: "/images/laravel.jpg"
+  alt: "Development of a web application using Laravel"
 ---
 Laravel is built supporting testing with <a href="https://pestphp.com/" target="_blank">Pest</a> and <a href="https://phpunit.de/index.html" target="_blank">PHPUnit</a> out of the box, including a `phpunit.xml` file.
 

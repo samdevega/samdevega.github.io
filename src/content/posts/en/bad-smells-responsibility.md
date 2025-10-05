@@ -2,6 +2,9 @@
 title: "Bad Smells: Responsibility"
 pubDate: 2019-03-20T15:02:42Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Bad smells coming from the code displayed in a laptop"
 ---
 Balancing responsibility between objects is difficult to achieve. One of the virtues of refactoring is that it allows us to experiment with different ideas in a safe way and allows us to change our minds.
 

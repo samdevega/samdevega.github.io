@@ -2,6 +2,9 @@
 title: "Gitignore global. Limpiar gitignore en repositorios"
 pubDate: 2024-04-08T16:30:00Z
 tags: ['git']
+image:
+  url: "/images/git.jpg"
+  alt: "Una vista de un flujo y diferencias de git"
 ---
 
 Solemos encontrar casos en los que el archivo `.gitignore` de un proyecto tiene muchas cosas que no están directamente relacionadas con el proyecto en sí sino con los entornos locales de los desarrolladores que trabajan en el proyecto. Esto incluye el archivo de índice del sistema de archivos de cada desarrollador, como el archivo `Thumbs.db` en Microsoft Windows o `.DS_Store` en Apple MacOS. El archivo de configuración del IDE o editor de código de cada desarrollador, por ejemplo el archivo `.idea` en IntelliJ Idea o el archivo `.vscode` en Microsoft Visual Studio Code e incluso una implementación de contenedor como el archivo `.docker-sync` en Docker.

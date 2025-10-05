@@ -2,6 +2,9 @@
 title: "Laravel: Caché"
 pubDate: 2024-04-23T22:10:00Z
 tags: ['laravel']
+image:
+  url: "/images/laravel.jpg"
+  alt: "Desarrollar una aplicación web usando Laravel"
 ---
 Algunas solicitudes en una aplicación pueden implicar la ejecución de tareas que requieren un uso intensivo de la CPU o que requieren mucho tiempo. Para estos casos, podemos almacenar en caché los datos resultantes durante algún tiempo para poder recuperarlos de manera rápida en solicitudes posteriores en lugar de tener que ejecutar la costosa tarea nuevamente para mejorar el rendimiento de la aplicación.
 

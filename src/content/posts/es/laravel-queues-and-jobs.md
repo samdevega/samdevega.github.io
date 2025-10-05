@@ -2,6 +2,9 @@
 title: "Laravel: Queues y Jobs"
 pubDate: 2024-02-29T19:30:00Z
 tags: ['laravel']
+image:
+  url: "/images/laravel.jpg"
+  alt: "Desarrollar una aplicación web usando Laravel"
 ---
 En Laravel podemos delegar la ejecución de tareas pesadas en tiempo o recursos a un segundo plano, evitando que una petición web se demore mucho tiempo. Para ello podemos valernos de los trabajos en cola (queued jobs).
 

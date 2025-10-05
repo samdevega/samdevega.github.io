@@ -2,6 +2,9 @@
 title: "Git cheat sheet and aliases"
 pubDate: 2024-10-04T22:25:00Z
 tags: ['git']
+image:
+  url: "/images/git.jpg"
+  alt: "A git flow and diff view"
 ---
 This post features the most important and commonly used Git commands for easy reference, plus some useful Git aliases.
 

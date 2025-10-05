@@ -2,8 +2,11 @@
 title: "Masonry Layout con tres líneas de CSS"
 pubDate: 2025-06-04T22:30:00Z
 tags: ['css']
+image:
+  url: "/images/masonry.jpg"
+  alt: "Una disposición masonry en una tablet"
 ---
-El masonry layout consiste en un grupo de elementos de tamaño desigual, dispuestos de forma que no haya espacios desiguales. Un claro ejemplo es el menú Metro de Microsoft Windows.
+La disposición masonry consiste en un grupo de elementos de tamaño desigual, dispuestos de forma que no haya espacios desiguales. Un claro ejemplo es el menú Metro de Microsoft Windows.
 
 El siguiente ejemplo de código muestra un conjunto de imágenes de diferentes tamaños.
 

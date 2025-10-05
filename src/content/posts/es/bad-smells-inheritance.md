@@ -2,6 +2,9 @@
 title: "Malos olores: Herencia"
 pubDate: 2019-03-20T12:47:12Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Malos olores viniendo del código mostrado en un portátil"
 ---
 La relación entre una clase y su subclase suele comenzar siendo simple pero se va volviendo más complicada con el paso del tiempo. Una subclase a menudo depende de su generalización más estrechamente que una clase ajena, pero esto puede ser demasiado.
 

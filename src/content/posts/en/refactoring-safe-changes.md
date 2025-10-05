@@ -2,6 +2,9 @@
 title: 'Refactoring: Safe changes'
 pubDate: 2019-03-17T19:55:05Z
 tags: ['refactoring']
+image:
+  url: "/images/refactoring.jpg"
+  alt: "A monitor displaying a code editor"
 ---
 ## The steps in refactoring
 

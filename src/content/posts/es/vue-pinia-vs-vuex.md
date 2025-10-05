@@ -2,6 +2,9 @@
 title: "Vue: Pinia vs. Vuex"
 pubDate: 2024-03-20T16:00:00Z
 tags: ['vue']
+image:
+  url: "/images/vue.jpg"
+  alt: "Desarrollar de una aplicación web usando Vue"
 ---
 Por un lado, Pinia, la actual biblioteca oficial de gestión de estado de Vue, fue desarrollada para Vue 3 y aprovecha su sistema de reactividad, haciéndola intuitiva y sencilla.  
 Por otro lado, Vuex, la anterior biblioteca oficial de gestión de estado, fue desarrollada para Vue 2 y utiliza el patrón Flux, propuesto por Facebook y popularizado por Redux.  

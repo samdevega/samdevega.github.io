@@ -2,15 +2,21 @@
 import BaseLayout from './BaseLayout.astro'
 import TagList from '../components/TagList.astro'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
-import { author, siteTitle } from '../constants'
+import { author, site, siteTitle } from '../constants'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 const { frontmatter } = Astro.props
 const subtitle = frontmatter.title
 const pageTitle = siteTitle +  ' - ' + subtitle
+const metas = `
+<meta property="og:title" content="${frontmatter.title}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="${Astro.url}" />
+<meta property="og:image" content="https://${site}${frontmatter.image.url}" />
+`
 ---
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} metas={metas}>
   <article>
     <h1>{frontmatter.title}</h1>
     <hr>

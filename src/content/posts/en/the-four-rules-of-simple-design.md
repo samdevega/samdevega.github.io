@@ -2,6 +2,9 @@
 title: 'The four rules of simple design'
 pubDate: 2025-08-11T16:30:00Z
 tags: ['software-design']
+image:
+  url: "/images/four-rules.jpg"
+  alt: "The four rules of simple design written in a notebook"
 ---
 Simplicity in software design results in cleaner code, easier maintenance, and more intuitive applications.
 

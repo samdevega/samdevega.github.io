@@ -2,6 +2,9 @@
 title: "Bad Smells: Inheritance"
 pubDate: 2019-03-20T12:47:12Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Bad smells coming from the code displayed in a laptop"
 ---
 The relationship between a class and its subclass usually starts out simple but becomes more complicated over time. A subclass often depends on its generalization more closely than an extraneous class, but this may be too much.
 

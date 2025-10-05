@@ -2,6 +2,9 @@
 title: "Bad Smells: Duplication"
 pubDate: 2019-03-19T21:29:35Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Bad smells coming from the code displayed in a laptop"
 ---
 Duplication causes the following problems:
 

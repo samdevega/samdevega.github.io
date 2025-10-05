@@ -2,6 +2,9 @@
 title: "Masonry Layout with three lines of CSS"
 pubDate: 2025-06-04T22:30:00Z
 tags: ['css']
+image:
+  url: "/images/masonry.jpg"
+  alt: "A masonry layout in a tablet"
 ---
 The masonry layout consists of a group of elements of unequal size, arranged in such a way that there are no uneven gaps. A clear example is the Metro menu in Microsoft Windows.
 

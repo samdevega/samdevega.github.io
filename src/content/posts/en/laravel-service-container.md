@@ -2,6 +2,9 @@
 title: "Laravel: Service Container"
 pubDate: 2024-02-19T20:40:00Z
 tags: ['laravel']
+image:
+  url: "/images/laravel.jpg"
+  alt: "Development of a web application using Laravel"
 ---
 Laravel Service Container is a toolbox that makes it easier for us to access the different tools in our code. This is achieved through dependency injection and optionally with bindings.
 Although Laravel already provides us in most cases with a zero-configuration resolution for dependency injection, there are two cases in which we will have to make use of the service container:

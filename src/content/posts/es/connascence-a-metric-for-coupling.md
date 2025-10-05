@@ -2,6 +2,9 @@
 title: "Connascence: Una métrica para el acoplamiento"
 pubDate: 2023-12-06T17:20:00Z
 tags: ['object-oriented']
+image:
+  url: "/images/connascence.jpg"
+  alt: "Un monitor mostrando código y métricas"
 ---
 Esta métrica para la calidad del software fue inventada por Meilir Page-Jones para permitir evaluar el grado de acoplamiento entre los distintos actores en un diseño orientado a objetos. Para ello categoriza el acoplamiento en distintos tipos, sirviendo como una herramienta de análisis para medir el impacto del acoplamiento y una guía para reducirlo.
 

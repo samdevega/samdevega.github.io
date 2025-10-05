@@ -31,6 +31,7 @@ const pageTitle = siteTitle + ' - ' + tag + ' ' + subtitle
   <p>Posts tagged with <em>{tag}</em>.</p>
   <ul>
     {translatedPosts.map(post => <BlogPost
+			image={post.data.image}
 			date={post.data.pubDate}
 			minRead={post.data.minRead}
 			title={post.data.title}

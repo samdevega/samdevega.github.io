@@ -2,6 +2,9 @@
 title: "Vue: Pinia vs. Vuex"
 pubDate: 2024-03-20T16:00:00Z
 tags: ['vue']
+image:
+  url: "/images/vue.jpg"
+  alt: "Development of a web application using Vue"
 ---
 On the one hand, Pinia, the current official state management library for Vue, was developed for Vue 3 and takes advantage of its reactivity system, making it intuitive and simple.  
 On the other hand, Vuex, the previous official state management library, was developed for Vue 2 and uses the Flux pattern, proposed by Facebook and popularized by Redux.  

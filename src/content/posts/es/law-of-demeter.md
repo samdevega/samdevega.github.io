@@ -2,6 +2,9 @@
 title: "Orientado a objetos: Ley de Demeter"
 pubDate: 2019-03-17T20:20:50Z
 tags: ['object-oriented']
+image:
+  url: "/images/demeter.jpg"
+  alt: "Principio de la Ley de Demeter en un diagrama UML"
 ---
 ## Sobre la Ley de Demeter
 

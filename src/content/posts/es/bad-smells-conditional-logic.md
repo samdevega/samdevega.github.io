@@ -2,6 +2,9 @@
 title: "Malos olores: Lógica condicional"
 pubDate: 2019-03-19T21:46:06Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Malos olores viniendo del código mostrado en un portátil"
 ---
 Es difícil de razonar ya que tenemos que considerar múltiples caminos a través del código.
 Es tentador añadir casos de uso especiales en lugar de desarrollar un caso de uso general.

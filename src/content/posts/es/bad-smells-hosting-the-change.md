@@ -2,6 +2,9 @@
 title: "Malos olores: Alojando el cambio"
 pubDate: 2019-03-20T17:31:25Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Malos olores viniendo del código mostrado en un portátil"
 ---
 Algunos problemas se vuelven más aparentes cuando intentas cambiar el código. Lo ideal es que una decisión de cambio afecte sólo a un único lugar. Cuando esto no sucede, es una señal de duplicidad de código. Detectar estos problemas suele tener otros beneficios como facilitar la testeabilidad del código.
 

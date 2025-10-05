@@ -2,6 +2,9 @@
 title: "Malos olores: Nombres"
 pubDate: 2019-03-19T21:02:05Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Malos olores viniendo del código mostrado en un portátil"
 ---
 Algunas herramientas para escoger nombres pueden ser:
 

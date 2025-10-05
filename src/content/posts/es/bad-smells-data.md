@@ -2,6 +2,9 @@
 title: "Malos olores: Datos"
 pubDate: 2019-03-20T08:09:48Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Malos olores viniendo del código mostrado en un portátil"
 ---
 Los DTOs son una oportunidad. Si los datos forman un buen conjunto, normalmente podemos encontrar un comportamiento que pertenezca a la clase.
 

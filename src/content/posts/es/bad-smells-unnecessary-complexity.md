@@ -2,6 +2,9 @@
 title: "Malos olores: Complejidad innecesaria"
 pubDate: 2019-03-19T21:14:35Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Malos olores viniendo del código mostrado en un portátil"
 ---
 >"Todo debería hacerse lo más simple posible. Pero no más simple."
 >

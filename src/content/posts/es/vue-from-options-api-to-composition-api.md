@@ -2,6 +2,9 @@
 title: "Vue: De Options API a Composition API"
 pubDate: 2024-03-19T16:00:00Z
 tags: ['vue']
+image:
+  url: "/images/vue.jpg"
+  alt: "Desarrollar de una aplicación web usando Vue"
 ---
 Composition API surge como una alternativa a la hora de escribir nuestros componentes en Vue. Difiere de la tradicional Options API de cara a solventar dos limitaciones que pueden llegar a surgir con esta última:
 

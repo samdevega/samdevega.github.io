@@ -2,6 +2,9 @@
 title: 'TypeScript Generics: Una excelente manera de cumplir con DRY'
 pubDate: 2023-12-03T16:30:00Z
 tags: ['typescript']
+image:
+  url: "/images/typescript-generics.jpg"
+  alt: "Reusabilidad en TypeScript"
 ---
 En los lenguajes orientados a objetos, se conoce como genéricos a los componentes que pueden trabajar con diversos tipos de datos en lugar de un único tipo. Esto permite a sus consumidores reutilizar la lógica de estos genéricos usando sus propios tipos.
 

@@ -2,6 +2,9 @@
 title: 'Refactoring: Cambios seguros'
 pubDate: 2019-03-17T19:55:05Z
 tags: ['refactoring']
+image:
+  url: "/images/refactoring.jpg"
+  alt: "Un monitor mostrando un editor de código"
 ---
 ## Los pasos en la refactorización
 

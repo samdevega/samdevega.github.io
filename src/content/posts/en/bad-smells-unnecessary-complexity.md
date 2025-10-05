@@ -2,6 +2,9 @@
 title: "Bad Smells: Unnecessary complexity"
 pubDate: 2019-03-19T21:14:35Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Bad smells coming from the code displayed in a laptop"
 ---
 >"Everything should be made as simple as possible. But not simpler."
 >

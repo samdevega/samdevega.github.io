@@ -2,6 +2,9 @@
 title: "Malos olores: Clases Librería"
 pubDate: 2019-03-20T18:44:47Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Malos olores viniendo del código mostrado en un portátil"
 ---
 Una aplicación moderna utilizará clases librería. En ocasiones estas nos ponen en un dilema. Queremos que la librería sea diferente, pero no queremos cambiarla. Incluso cuando es posible cambiar de librería, conlleva riesgos: Afecta a otros clientes y ello implica rehacer nuestros cambios para futuras versiones de la librería.
 

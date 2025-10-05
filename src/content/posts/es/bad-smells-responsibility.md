@@ -2,6 +2,9 @@
 title: "Malos olores: Responsabilidad"
 pubDate: 2019-03-20T15:02:42Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Malos olores viniendo del código mostrado en un portátil"
 ---
 El equilibrio en la responsabilidad entre objetos es difícil de conseguir. Una de las virtudes de la refactorización es que nos permite experimentar con diferentes ideas de una forma segura y nos permite cambiar de idea.
 

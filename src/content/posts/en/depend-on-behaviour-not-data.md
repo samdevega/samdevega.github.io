@@ -2,6 +2,9 @@
 title: "Object-oriented: Depend on behavior, not data"
 pubDate: 2021-10-10T13:45:42+01:00
 tags: ['object-oriented']
+image:
+  url: "/images/behavior-not-data.jpg"
+  alt: "A luxury car without wheels vs. a cheap but functional car"
 ---
 When programming, you can be tempted to use variables to store the result of calling a specific method. This is particularly tricky when a method talks about application logic.
 

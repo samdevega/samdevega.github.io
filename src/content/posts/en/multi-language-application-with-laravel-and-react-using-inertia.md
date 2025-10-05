@@ -2,6 +2,9 @@
 title: "Multi-language application with Laravel and React using Inertia"
 pubDate: 2024-10-12T12:15:00Z
 tags: ['laravel', 'react']
+image:
+  url: "/images/inertia.jpg"
+  alt: "Development of a web application using Inertia"
 ---
 Inertia is called the modern monolith by its creators. It allows us to create single-page applications without a lot of the complexity that these kind of apps use to involve. It replaces a routing library, such as React Router, and lets us get rid of any state management library such as Redux, XState or Zustand.
 

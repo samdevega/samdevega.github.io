@@ -2,6 +2,9 @@
 title: "Object-oriented: Procedural polymorphism"
 pubDate: 2021-03-12T09:00:44Z
 tags: ['object-oriented']
+image:
+  url: "/images/procedural-polymorphism.jpg"
+  alt: "A sailboat with wings vs. a seaplane"
 ---
 ## About polymorphism in object-oriented design
 

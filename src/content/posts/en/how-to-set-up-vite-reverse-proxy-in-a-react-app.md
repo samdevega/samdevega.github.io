@@ -2,6 +2,9 @@
 title: "How to set up Vite reverse proxy in a React app"
 pubDate: 2025-02-01T12:15:00Z
 tags: ['react', 'vite']
+image:
+  url: "/images/vite.jpg"
+  alt: "Vite documentation website"
 ---
 Configuring the <a href="https://vite.dev" target="_blank">Vite</a> reverse proxy allows us to redirect requests that match a pattern and direct them to a specific server. This is especially useful during the development stage, since it allows our frontend application to communicate with a specific API, such as a mock server using <a href="https://mswjs.io/docs" target="_blank">Mock Service Worker</a> or a local instance of the backend project.
 

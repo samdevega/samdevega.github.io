@@ -2,6 +2,9 @@
 title: 'Las cuatro reglas del diseño simple'
 pubDate: 2025-08-11T16:30:00Z
 tags: ['software-design']
+image:
+  url: "/images/four-rules.jpg"
+  alt: "Las cuatro reglas del diseño simple escritas en un cuaderno"
 ---
 La simplicidad en el diseño de software resulta en un código más limpio, un mantenimiento más sencillo y aplicaciones más intuitivas.
 

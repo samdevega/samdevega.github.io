@@ -2,6 +2,9 @@
 title: "React: Zustand"
 pubDate: 2024-09-07T23:00:00Z
 tags: ['react']
+image:
+  url: "/images/react.jpg"
+  alt: "Desarrollar de una aplicación web usando React"
 ---
 Zustand es una solución de gestión de estados pequeña, rápida y escalable con una sencilla API basada en hooks, que se adapta muy bien a las últimas versiones de React. No requiere configuración y es una gran opción para proyectos pequeños y medianos.
 

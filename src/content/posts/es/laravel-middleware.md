@@ -2,6 +2,9 @@
 title: "Laravel: Middleware"
 pubDate: 2024-02-23T20:00:00Z
 tags: ['laravel']
+image:
+  url: "/images/laravel.jpg"
+  alt: "Desarrollar una aplicación web usando Laravel"
 ---
 En Laravel, un middleware permite inspeccionar y filtrar una petición HTTP entrante en nuestra aplicación.
 

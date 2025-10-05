@@ -2,6 +2,9 @@
 title: "Orientado a objetos: Cohesión, acoplamiento y encapsulamiento"
 pubDate: 2019-06-23T09:51:33Z
 tags: ['object-oriented']
+image:
+  url: "/images/cohesion-coupling.jpg"
+  alt: "Una representación gráfica de acoplamiento y cohesión"
 ---
 ## Cohesión
 

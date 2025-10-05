@@ -2,6 +2,9 @@
 title: 'TypeScript Generics: A great way to comply with DRY'
 pubDate: 2023-12-03T16:30:00Z
 tags: ['typescript']
+image:
+  url: "/images/typescript-generics.jpg"
+  alt: "Reusability in TypeScript"
 ---
 In object-oriented languages, components that can work with various types of data instead of a single type are known as generics. This allows consumers to reuse the logic of these generics using their own types.
 

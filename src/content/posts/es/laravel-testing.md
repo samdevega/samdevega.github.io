@@ -2,6 +2,9 @@
 title: "Laravel: Testing"
 pubDate: 2024-05-23T21:30:00Z
 tags: ['laravel', 'testing']
+image:
+  url: "/images/laravel.jpg"
+  alt: "Desarrollar una aplicación web usando Laravel"
 ---
 Laravel está diseñado para soportar tests con <a href="https://pestphp.com/" target="_blank">Pest</a> y <a href="https://phpunit.de/index.html" target ="_blank">PHPUnit</a> listo para usar, incluido un archivo `phpunit.xml`.
 

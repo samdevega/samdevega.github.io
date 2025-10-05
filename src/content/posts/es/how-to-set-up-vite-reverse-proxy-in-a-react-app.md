@@ -2,6 +2,9 @@
 title: "Cómo configurar el proxy inverso de Vite en una aplicación React"
 pubDate: 2025-02-01T12:15:00Z
 tags: ['react', 'vite']
+image:
+  url: "/images/vite.jpg"
+  alt: "Sitio web de la documentación de Vite"
 ---
 La configuración del proxy inverso de <a href="https://es.vite.dev" target="_blank">Vite</a> nos permite redireccionar las peticiones que coincidan con un patrón y dirigirlas hacia un servidor determinado. Esto es especialmente útil durante la etapa de desarrollo, dado que permite comunicar nuestra aplicación frontend con una API específica, como por ejemplo, un servidor mock utilizando <a href="https://mswjs.io/docs" target="_blank">Mock Service Worker</a> o una instancia local del proyecto backend.
 

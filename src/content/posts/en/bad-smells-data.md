@@ -2,6 +2,9 @@
 title: "Bad Smells: Data"
 pubDate: 2019-03-20T08:09:48Z
 tags: ['bad-smells']
+image:
+  url: "/images/bad-smells.jpg"
+  alt: "Bad smells coming from the code displayed in a laptop"
 ---
 DTOs are an opportunity. If the data forms a good set, we can usually find a behavior that belongs to the class.
 

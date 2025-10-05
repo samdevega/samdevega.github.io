@@ -2,6 +2,9 @@
 title: "Orientado a objetos: Depende del comportamiento, no de los datos"
 pubDate: 2021-10-10T13:45:42+01:00
 tags: ['object-oriented']
+image:
+  url: "/images/behavior-not-data.jpg"
+  alt: "Un coche lujoso sin ruedas frente a un coche barato pero funcional"
 ---
 Al programar, se puede caer en la tentación de utilizar variables para almacenar el resultado de la llamada a un método determinado. Esto es particularmente delicado cuando un método habla sobre la lógica de la aplicación.
 

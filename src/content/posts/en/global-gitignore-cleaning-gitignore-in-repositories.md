@@ -2,6 +2,9 @@
 title: "Global gitignore. Cleaning gitignore in repositories"
 pubDate: 2024-04-08T16:30:00Z
 tags: ['git']
+image:
+  url: "/images/git.jpg"
+  alt: "A git flow and diff view"
 ---
 
 We use to find cases where the `.gitignore` file of a project has a lot of stuff which is not directly related to the project itself but to the local environments of the developers who work on the project. This includes the index file of every developer's file system, such as the `Thumbs.db` file on Microsoft Windows or `.DS_Store` on Apple MacOS. Each developer's IDE or code editor settings file e.g. the `.idea` file on IntelliJ Idea or the `.vscode` file on Microsoft Visual Studio Code and even a container implementation like the `.docker-sync` file on Docker.
