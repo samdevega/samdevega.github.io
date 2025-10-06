@@ -1,25 +1,23 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import { getLangFromUrl, useTranslations } from '../../i18n/utils'
-import { author, siteTitle } from '../../constants'
+import { siteTitle } from '../../constants'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 const subtitle = t('nav.about') + ' de mí'
 const pageTitle = siteTitle + ' - ' + subtitle
-const identity = {
-  name: author.name,
-  country: 'España',
-  occupation: 'desarrollador de software'
-}
 const skills = ['CSS', 'Docker', 'Git', 'HTML', 'JavaScript', 'Laravel', 'MySQL', 'PHP', 'React', 'Tailwind CSS', 'TypeScript', 'Vue']
 ---
 <BaseLayout pageTitle={pageTitle}>
   <h1>{subtitle}</h1>
-  <p>Soy {identity.name}. Vivo en {identity.country} y trabajo como {identity.occupation}.</p>
-  <p>Soy un jugador de equipo al que le gusta trabajar en equipos ágiles. La cobertura de test es imprescindible. Me gusta llamar a las cosas por su nombre técnico cuando hablo de código, prefiriendo la comunicación asertiva. La calidad del código, el mantenimiento y la corrección de errores son responsabilidad de todo el equipo para mí.</p>
+  <p>¡Hola! Soy Samuel y trabajo como desarrollador de software.</p>
+  <p>Me apasiona construir aplicaciones web bien diseñadas y centradas en el usuario, que no solo sean visualmente atractivas, sino que también estén construidas con un enfoque claro en ofrecer un valor tangible al negocio. Mi objetivo es crear software que impulse los resultados del negocio y satisfaga las necesidades del usuario, manteniendo siempre altos estándares de excelencia técnica.</p>
+  <p>Como desarrollador, me encanta trabajar en equipos colaborativos y ágiles, donde se priorizan la comunicación, la transparencia y la eficiencia. Creo en fomentar una cultura de equipo donde la calidad sea responsabilidad de todos, desde el diseño hasta el despliegue. Escribo código mantenible, escalable y libre de errores, y enfrento cada tarea con una mentalidad de mejora continua.</p>
+  <p>Priorizo el desarrollo basado en pruebas (TDD) y una cobertura de pruebas completa para garantizar la solidez y fiabilidad de las aplicaciones que construyo. También creo en la importancia de un código limpio y legible, y soy un defensor de los estándares de codificación bien definidos y las mejores prácticas que facilitan el mantenimiento a largo plazo y la colaboración.</p>
+  <p>Siempre estoy emocionado de asumir nuevos desafíos y mantenerme al día con las últimas tendencias y tecnologías del sector para asegurarme de que las soluciones que entrego sean innovadoras y estén alineadas con las necesidades cambiantes del negocio.</p>
   {!!skills.length &&
-    <p>Mis habilidades técnicas incluyen:</p>
+    <p>Estas son algunas de las tecnologías con las que trabajo regularmente, aunque mi experiencia abarca un conjunto más amplio de herramientas y tecnologías:</p>
     <ul>{skills.map(skill => <li>{skill}</li>)}</ul>
   }
 </BaseLayout>

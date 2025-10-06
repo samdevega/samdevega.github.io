@@ -1,25 +1,23 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import { getLangFromUrl, useTranslations } from '../../i18n/utils'
-import { author, siteTitle } from '../../constants'
+import { siteTitle } from '../../constants'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 const subtitle = t('nav.about') + ' me'
 const pageTitle = siteTitle + ' - ' + subtitle
-const identity = {
-  name: author.name,
-  country: 'Spain',
-  occupation: 'Software Developer'
-}
 const skills = ['CSS', 'Docker', 'Git', 'HTML', 'JavaScript', 'Laravel', 'MySQL', 'PHP', 'React', 'Tailwind CSS', 'TypeScript', 'Vue']
 ---
 <BaseLayout pageTitle={pageTitle}>
   <h1>{subtitle}</h1>
-  <p>I am {identity.name}. I live in {identity.country} and I work as a {identity.occupation}.</p>
-  <p>I am a team player who likes to work in agile teams. Test coverage is a must. I like to call the things by its technical name when talking about code, preferring assertive communication. Code quality, maintenance and bug fixing is a whole team responsibility for me.</p>
+  <p>Hi! I'm Samuel and I work as software developer.</p>
+  <p>I am passionate about building well-designed, user-centric web applications that not only look great but are also built with a clear focus on delivering tangible value to the business. My goal is to create software that drives business outcomes and meets user needs while maintaining high standards of technical excellence.</p>
+  <p>As a developer, I thrive in collaborative, agile teams where communication, transparency, and efficiency are prioritized. I believe in fostering a team culture where quality is a collective responsibility—from design to deployment. Writing maintainable, scalable, and bug-free code is essential to me, and I approach each task with a mindset of continuous improvement.</p>
+  <p>I prioritize test-driven development (TDD) and comprehensive test coverage to ensure the robustness and reliability of the applications I build. I also believe in the importance of clean, readable code, and I'm an advocate for well-defined coding standards and best practices that enable long-term maintainability and ease of collaboration.</p>
+  <p>I'm always excited to take on new challenges and stay updated with the latest industry trends and technologies to ensure that the solutions I deliver are cutting-edge and aligned with the evolving needs of the business.</p>
   {!!skills.length &&
-    <p>My technical skills include:</p>
+    <p>Here are some of the key technologies I regularly work with, though my experience spans a broader range of tools and technologies:</p>
     <ul>{skills.map(skill => <li>{skill}</li>)}</ul>
   }
 </BaseLayout>
