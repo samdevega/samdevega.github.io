@@ -27,7 +27,20 @@ const formattedDate = date.toISOString().split('T')[0]
 </a></li>
 
 <style>
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   li {
+    animation: fade-up 666ms;
     display: flex;
     align-items: stretch;
     margin: 0;
