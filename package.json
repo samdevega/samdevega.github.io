@@ -11,8 +11,8 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.12",
-    "astro": "^5.13.10"
+    "@astrojs/rss": "^4.0.15",
+    "astro": "^5.17.1"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
