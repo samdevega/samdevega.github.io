@@ -14,7 +14,7 @@ export async function GET() {
     items: posts.map((post) => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
-      link: `${lang}/blog/${post.slug.slice(3)}`
+      link: `${lang}/blog/${post.id.slice(3)}`
     })),
     customData: `<language>${lang}</language>`,
   })
