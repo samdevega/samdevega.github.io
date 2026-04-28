@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 import Icon from './Icon.astro'
 
@@ -9,7 +10,7 @@ const formattedDate = date.toISOString().split('T')[0]
 ---
 <li><a href={url}>
   <picture>
-    {image.url ? <img src={image.url} alt={image.alt} /> : <Icon size='3rem' name='picture' /> }
+    {image.url ? <Image src={image.url} alt={image.alt} width="604" height="340" loading="eager" fetchpriority="high" /> : <Icon size='3rem' name='picture' /> }
   </picture>
   <div>
     { heading === 6 && <h6 class={size}>{title}</h6> }
@@ -130,3 +131,18 @@ const formattedDate = date.toISOString().split('T')[0]
     );
   }
 </style>
+<script>
+  const scrolledOutImages = document.querySelectorAll('picture img') as NodeListOf<HTMLImageElement>
+  const windowHeight = window.innerHeight
+  const scrollPosition = window.scrollY
+
+  scrolledOutImages.forEach(image => {
+    const imageTop = image.getBoundingClientRect().top + scrollPosition
+    const imageBottom = imageTop + image.offsetHeight
+
+    if (imageBottom < scrollPosition || imageTop > scrollPosition + windowHeight) {
+      image.loading = 'lazy'
+      image.fetchPriority = 'low'
+    }
+  })
+</script>
